@@ -178,3 +178,5 @@ td:nth-child(4) { text-align: center; }
 .res-desc { font-size: 0.8em; list-style-type: none; }
 .res-url { font-size: 0.8em; list-style-type: none; }
 .res-gap { margin-bottom: 15px; }
+.flag-wrap { width: 100%; text-align: center; }
+#flag { cursor: default; }

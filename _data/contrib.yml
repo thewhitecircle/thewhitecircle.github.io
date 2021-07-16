@@ -25,8 +25,8 @@
         img: images/social/disabled_web.svg
         link:
       github:
-        img: images/social/disabled_github.svg
-        link:
+        img: images/social/github.svg
+        link: https://github.com/chocharrison
       twitter:
         img: images/social/disabled_twitter.svg
         link:

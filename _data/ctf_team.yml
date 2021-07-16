@@ -32,6 +32,23 @@
         img: images/social/linkedin.svg
         link: https://www.linkedin.com/in/twc-kyle
 
+- alias: choco
+  image: images/contrib/choco.gif
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/github.svg
+        link: https://github.com/chocharrison
+      twitter:
+        img: images/social/disabled_twitter.svg
+        link:
+      linkedin:
+        img: images/social/disabled_linkedin.svg
+        link:
+
 - alias: chronocruz
   image: images/team/chrono.png
   social:
