@@ -1,0 +1,39 @@
+---
+layout: default
+title: The White Circle | CTF Scoreboard
+desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+image: images/twc_og_banner.jpg
+parent: CTF
+current: Scores
+---
+
+<pre><code class="white-text ascii-banner">
+   _____ __________  ____  ___________
+  / ___// ____/ __ \/ __ \/ ____/ ___/
+  \__ \/ /   / / / / /_/ / __/  \__ \  TWC
+ ___/ / /___/ /_/ / _, _/ /___ ___/ /  CTF
+/____/\____/\____/_/ |_/_____//____/
+</pre></code>
+
+<div class="score-container">
+    <table>
+        <col style="width:10%" align="center">
+	    <col style="width:70%">
+	    <col style="width:10%">
+        <col style="width:10%">
+        <tr>
+            <th class="white-text">#</th>
+            <th class="white-text">PLAYERS</th>
+            <th class="white-text">P</th>
+            <th class="white-text">B</th>
+        </tr>
+        {% for entry in site.data.scoreboard %}
+            <tr>
+                <td class="yellow-text">{{ entry.rank }}</td>
+                <td class="green-text">{{ entry.name }}</td>
+                <td class="cyan-text">{{ entry.points }}</td>
+                <td class="red-text">{{ entry.bloods }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>

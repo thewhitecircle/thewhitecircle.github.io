@@ -1,0 +1,275 @@
+---
+layout: default
+title: The White Circle | CTF
+desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+image: images/twc_og_banner.jpg
+parent: Home
+current: CTF
+---
+
+<div data-augmented-ui="tl-clip tr-clip br-2-clip-x bl-2-clip-x both" class="aui-theme intro-card m10">
+	<h2 class="card-title white-text">CAPTURE THE FLAG</h2>
+	<p class="cyan-text sub-intro">
+    Awesome challenges created by community members for fun and practice.
+ 	</p>
+</div>
+
+<div class="ctf-btn-wrapper">
+  <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ch-intro-btn white-text" onclick="location.href = '{{ site.url }}/ctf/team/';">TEAM</div>
+  <div data-augmented-ui="bl-clip br-clip both" class="aui-theme-btn ch-intro-btn white-text" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdDcxyP5WFxtLTzuuAxXsGCY7xl9RIIrQ-7YWjlwc02lC-4SA/viewform?usp=sf_link');">SUBMIT</div>
+  <div data-augmented-ui="tr-clip bl-clip both" class="aui-theme-btn ch-intro-btn white-text" onclick="location.href = '{{ site.url }}/ctf/scores/';">SCORES</div>
+</div>
+
+<div class="tab-layout">
+  <div class="tab">
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'info')" id="defaultOpen">INFO</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'stego')">STEGANOGRAPHY</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'crypto')">CRYPTOGRAPHY</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'osint')">OSINT</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 're')">RE</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'pwn')">PWN</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'misc')">MISCELLANEOUS</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'forensics')">FORENSICS</div>
+  </div>
+
+  <div data-augmented-ui="bl-clip br-clip both" class="aui-theme-btn panel-btn white-text" onclick="open_panel();">☰</div>
+  <div class="panel-theme hide-panel" id="panel">
+    <div class="blue-glass"></div>
+    <div class="close-btn white-text" onclick="close_panel();">✕</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'info'); close_panel();" id="defaultOpen">INFO</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'stego'); close_panel();">STEGANOGRAPHY</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'crypto'); close_panel();">CRYPTOGRAPHY</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'osint'); close_panel();">OSINT</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 're'); close_panel();">RE</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'pwn'); close_panel();">PWN</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'misc'); close_panel();">MISCELLANEOUS</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn tablinks link white-text" onclick="category(event, 'forensics'); close_panel();">FORENSICS</div>
+  </div>
+
+  <div id="info" class="tabcontent">
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme ctf-info">
+      <ul>
+        <li class="green-text"><span class="cyan-text">Suitable for all skill levels</span></li>
+        <li class="green-text"><span class="cyan-text">You can ask for hints in <span class="green-text">#ctf-discussion</span></span></li>
+        <li class="green-text"><span class="cyan-text">Flag format is <span class="green-text">twc{s0m3_fl4g}</span></span></li>
+        <li class="green-text"><span class="cyan-text">Password for ZIP files is <span class="green-text">thewhitecirle</span></span></li>
+        <li class="green-text"><span class="cyan-text">To submit flags send a direct message to <span class="green-text">@T1T4N</span> otherwise your solve will not be counted</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="stego" class="tabcontent">
+    {% for ch in site.data.challenges %}
+      {% if ch.category == "stego" %}
+        <div data-augmented-ui="tr-clip bl-clip both" class="aui-theme ch-card">
+          <div class="ch-title">
+            <span class="green-text">{{ ch.title }}</span>
+          </div>
+          <div class="ch-desc">
+            <code class="white-text">{{ ch.description }}</code>
+          </div>
+          <div class="ch-sub-card">
+            <div class="ch-meta-wrapper">
+              <span class="cyan-text">C : <span class="yellow-text">{{ ch.creator }}</span></span>
+              <br>
+              <span class="cyan-text">P : <span class="yellow-text">{{ ch.points }}</span></span>
+            </div>
+            <div class="ch-btn-wrapper">
+              <a class="ch-btn" href="{{ site.url }}/ctf/files/{{ ch.title }}.zip" download="{{ ch.title }}.zip">
+                <img class="ch-down lazyload" alt="the white circle ctf" src="{{ site.url }}/images/download.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/images/download.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="crypto" class="tabcontent">
+    {% for ch in site.data.challenges %}
+      {% if ch.category == "crypto" %}
+        <div data-augmented-ui="tr-clip bl-clip both" class="aui-theme ch-card">
+          <div class="ch-title">
+            <span class="green-text">{{ ch.title }}</span>
+          </div>
+          <div class="ch-desc">
+            <code class="white-text">{{ ch.description }}</code>
+          </div>
+          <div class="ch-sub-card">
+            <div class="ch-meta-wrapper">
+              <span class="cyan-text">C : <span class="yellow-text">{{ ch.creator }}</span></span>
+              <br>
+              <span class="cyan-text">P : <span class="yellow-text">{{ ch.points }}</span></span>
+            </div>
+            <div class="ch-btn-wrapper">
+              <a class="ch-btn" href="{{ site.url }}/ctf/files/{{ ch.title }}.zip" download="{{ ch.title }}.zip">
+                <img class="ch-down lazyload" alt="the white circle ctf" src="{{ site.url }}/images/download.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/images/download.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="osint" class="tabcontent">
+    {% for ch in site.data.challenges %}
+      {% if ch.category == "osint" %}
+        <div data-augmented-ui="tr-clip bl-clip both" class="aui-theme ch-card">
+          <div class="ch-title">
+            <span class="green-text">{{ ch.title }}</span>
+          </div>
+          <div class="ch-desc">
+            <code class="white-text">{{ ch.description }}</code>
+          </div>
+          <div class="ch-sub-card">
+            <div class="ch-meta-wrapper">
+              <span class="cyan-text">C : <span class="yellow-text">{{ ch.creator }}</span></span>
+              <br>
+              <span class="cyan-text">P : <span class="yellow-text">{{ ch.points }}</span></span>
+            </div>
+            <div class="ch-btn-wrapper">
+              <a class="ch-btn" href="{{ site.url }}/ctf/files/{{ ch.title }}.zip" download="{{ ch.title }}.zip">
+                <img class="ch-down lazyload" alt="the white circle ctf" src="{{ site.url }}/images/download.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/images/download.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="re" class="tabcontent">
+    {% for ch in site.data.challenges %}
+      {% if ch.category == "re" %}
+        <div data-augmented-ui="tr-clip bl-clip both" class="aui-theme ch-card">
+          <div class="ch-title">
+            <span class="green-text">{{ ch.title }}</span>
+          </div>
+          <div class="ch-desc">
+            <code class="white-text">{{ ch.description }}</code>
+          </div>
+          <div class="ch-sub-card">
+            <div class="ch-meta-wrapper">
+              <span class="cyan-text">C : <span class="yellow-text">{{ ch.creator }}</span></span>
+              <br>
+              <span class="cyan-text">P : <span class="yellow-text">{{ ch.points }}</span></span>
+            </div>
+            <div class="ch-btn-wrapper">
+              <a class="ch-btn" href="{{ site.url }}/ctf/files/{{ ch.title }}.zip" download="{{ ch.title }}.zip">
+                <img class="ch-down lazyload" alt="the white circle ctf" src="{{ site.url }}/images/download.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/images/download.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="pwn" class="tabcontent">
+    {% for ch in site.data.challenges %}
+      {% if ch.category == "pwn" %}
+        <div data-augmented-ui="tr-clip bl-clip both" class="aui-theme ch-card">
+          <div class="ch-title">
+            <span class="green-text">{{ ch.title }}</span>
+          </div>
+          <div class="ch-desc">
+            <code class="white-text">{{ ch.description }}</code>
+          </div>
+          <div class="ch-sub-card">
+            <div class="ch-meta-wrapper">
+              <span class="cyan-text">C : <span class="yellow-text">{{ ch.creator }}</span></span>
+              <br>
+              <span class="cyan-text">P : <span class="yellow-text">{{ ch.points }}</span></span>
+            </div>
+            <div class="ch-btn-wrapper">
+              <a class="ch-btn" href="{{ site.url }}/ctf/files/{{ ch.title }}.zip" download="{{ ch.title }}.zip">
+                <img class="ch-down lazyload" alt="the white circle ctf" src="{{ site.url }}/images/download.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/images/download.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="misc" class="tabcontent">
+    {% for ch in site.data.challenges %}
+      {% if ch.category == "misc" %}
+        <div data-augmented-ui="tr-clip bl-clip both" class="aui-theme ch-card">
+          <div class="ch-title">
+            <span class="green-text">{{ ch.title }}</span>
+          </div>
+          <div class="ch-desc">
+            <code class="white-text">{{ ch.description }}</code>
+          </div>
+          <div class="ch-sub-card">
+            <div class="ch-meta-wrapper">
+              <span class="cyan-text">C : <span class="yellow-text">{{ ch.creator }}</span></span>
+              <br>
+              <span class="cyan-text">P : <span class="yellow-text">{{ ch.points }}</span></span>
+            </div>
+            <div class="ch-btn-wrapper">
+              <a class="ch-btn" href="{{ site.url }}/ctf/files/{{ ch.title }}.zip" download="{{ ch.title }}.zip">
+                <img class="ch-down lazyload" alt="the white circle ctf" src="{{ site.url }}/images/download.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/images/download.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="forensics" class="tabcontent">
+    {% for ch in site.data.challenges %}
+      {% if ch.category == "forensics" %}
+        <div data-augmented-ui="tr-clip bl-clip both" class="aui-theme ch-card">
+          <div class="ch-title">
+            <span class="green-text">{{ ch.title }}</span>
+          </div>
+          <div class="ch-desc">
+            <code class="white-text">{{ ch.description }}</code>
+          </div>
+          <div class="ch-sub-card">
+            <div class="ch-meta-wrapper">
+              <span class="cyan-text">C : <span class="yellow-text">{{ ch.creator }}</span></span>
+              <br>
+              <span class="cyan-text">P : <span class="yellow-text">{{ ch.points }}</span></span>
+            </div>
+            <div class="ch-btn-wrapper">
+              <a class="ch-btn" href="{{ site.url }}/ctf/files/{{ ch.title }}.zip" download="{{ ch.title }}.zip">
+                <img class="ch-down lazyload" alt="the white circle ctf" src="{{ site.url }}/images/download.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/images/download.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<script src="{{ site.url }}/js/lazysizes.min.js"></script>
+<script>
+  function category(evt, catname) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(catname).style.display = "flex";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+
+  function open_panel() {
+    document.getElementById("panel").classList.replace("hide-panel", "show-panel");
+  }
+
+  function close_panel() {
+    document.getElementById("panel").classList.replace("show-panel", "hide-panel");
+  }
+</script>

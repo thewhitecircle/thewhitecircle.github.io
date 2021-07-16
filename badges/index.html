@@ -1,0 +1,35 @@
+---
+layout: default
+title: The White Circle
+desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+image: images/twc_og_banner.jpg
+parent: Home
+current: Badges
+---
+
+<div data-augmented-ui="tl-clip tr-clip br-2-clip-x bl-2-clip-x both" class="aui-theme intro-card m10">
+	<h2 class="card-title white-text">BADGE LIFE</h2>
+	<p class="cyan-text sub-intro">
+		From time to time we release digital badges and issue them to deserving community members. All badges are issued from Badgr and can be verified!
+	</p>
+</div>
+
+<div class="badge-container">
+    {% for bdg in site.data.badges %}
+        <div class="badge-card-wrapper data-tilt">
+            <div data-augmented-ui="br-clip both" class="aui-theme badge-card"></div>
+            <div class="badge-sub-card sub-tilt">
+                <img class="badge-img lazyload" alt="The White Cirle Badges" src="{{ site.url }}{{ bdg.img }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}{{ bdg.img }}">
+                <div class="badge-meta">
+                    <span class="badge-name yellow-text">{{ bdg.name }}</span>
+                    <span class="badge-desc cyan-text">{{ bdg.desc }}</span>
+                    <span class="badge-count cyan-text"><span class="green-text">{{ bdg.count }}</span> members awarded</span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<script src="{{ site.url }}/js/lazysizes.min.js"></script>
+<script src="{{ site.url }}/js/vanilla-tilt.min.js"></script>
+<script>VanillaTilt.init(document.querySelectorAll(".data-tilt"), { speed: 1000, gyroscope: false });</script>

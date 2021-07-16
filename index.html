@@ -1,0 +1,115 @@
+---
+layout: default
+title: The White Circle | Security Community | Free for All | Open for All
+desc: "The White Circle is an international community of cyber/info security students, enthusiasts and professionals. Share your knowledge with others, get guidance when you need it and proceed further in your journey with amazing people from all over the world."
+image: images/twc_og_banner.jpg
+current: Home
+---
+
+<div data-augmented-ui="tl-clip tr-clip br-2-clip-x bl-2-clip-x both" class="aui-theme intro-card m10">
+	<h2 class="card-title white-text">WHAT IS TWC</h2>
+	<p class="cyan-text sub-intro">
+		The White Circle is an international community of cyber/info security students, enthusiasts and professionals.
+		<br><br>
+		<strong class="green-text">Free for All | Open for All</strong>
+		<br><br>
+		Share your knowledge with others, get guidance when you need it and proceed further in your journey with amazing people from all over the world.
+	</p>
+	<div class="link join-btn m20" onclick="window.open('{{ site.discord }}');">
+		<div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn join-btn white-text">CONNECT</div>
+	</div>
+</div>
+
+<div class="nav-menu m20">
+	<div class="data-tilt" onclick="location.href='{{ site.url }}/ctf/';">
+		<div data-augmented-ui="all-hexangle-up both" class="aui-theme nav-menu-item link"></div>
+		<img class="nav-img lazyload sub-tilt" alt="The White Cirle Badges" src="{{ site.url }}/images/flag.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}//images/flag.svg">
+	</div>
+	<div class="data-tilt" onclick="location.href='{{ site.url }}/badges/';">
+		<div data-augmented-ui="all-hexangle-down both" class="aui-theme nav-menu-item link"></div>
+		<img class="nav-img lazyload sub-tilt" alt="The White Cirle CTF" src="{{ site.url }}/images/medal.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}//images/medal.svg">	
+	</div>
+	<div class="data-tilt" onclick="location.href='{{ site.url }}/resources/';">
+		<div data-augmented-ui="all-hexangle-up both" class="aui-theme nav-menu-item link"></div>
+		<img class="nav-img lazyload sub-tilt" alt="The White Cirle Resources" src="{{ site.url }}/images/tools.svg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}//images/tools.svg">
+	</div>
+</div>
+
+<h2 class="card-title white-text">TWC TEAM</h2>
+
+<div class="slider">
+	{% for member in site.data.team %}
+	<div class="member-card-wrapper data-tilt">
+		<div data-augmented-ui="tr-clip bl-clip br-2-clip-y both" class="member-card aui-theme"></div>
+		<div class="member-sub-card sub-tilt">
+			<div class="member-meta-left">
+				<div data-augmented-ui="tr-clip bl-clip border" class="aui-theme member-img-wrapper">
+					<img class="member-img lazyload" src="{{ site.url }}/{{ member.image }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ member.image }}">
+				</div>
+			</div>
+			<div class="member-meta-right">
+				<span class="member-name cyan-text">{{ member.alias }}</span>
+				<span class="member-title yellow-text">{{ member.title }}</span>
+				<div class="social-bar">
+					{% for s_list in member.social %}
+						{% for platform in s_list %}
+							{% if platform[1].link != nil %}
+							<button class="social-btn link" onclick="window.open('{{ platform[1].link }}');">
+								<img class="social-img lazyload" alt="{{ member.alias }} {{ platform[0] }}" src="{{ site.url }}/{{ platform[1].img }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ platform[1].img }}">
+							</button>
+							{% else %}
+							<button class="social-btn" disabled>
+								<img class="social-img lazyload" alt="{{ member.alias }} {{ platform[0] }}" src="{{ site.url }}/{{ platform[1].img }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ platform[1].img }}">
+							</button>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<h2 class="card-title white-text">CONTRIBUTORS</h2>
+
+<div class="slider">
+	{% for member in site.data.contrib %}
+	<div class="member-card-wrapper data-tilt">
+		<div data-augmented-ui="tr-clip bl-clip br-2-clip-y both" class="member-card aui-theme"></div>
+		<div class="member-sub-card sub-tilt">
+			<div class="member-meta-left">
+				<div data-augmented-ui="tr-clip bl-clip both" class="aui-theme member-img-wrapper">
+					<img class="member-img lazyload" src="{{ site.url }}/{{ member.image }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ member.image }}">
+				</div>
+			</div>
+			<div class="member-meta-right">
+				<span class="member-name cyan-text">{{ member.alias }}</span>
+				<span class="member-title yellow-text">{{ member.title }}</span>
+				<div class="social-bar">
+					{% for s_list in member.social %}
+						{% for platform in s_list %}
+							{% if platform[1].link != nil %}
+								<button class="social-btn link" onclick="window.open('{{ platform[1].link }}');">
+									<img class="social-img lazyload" alt="{{ member.alias }} {{ platform[0] }}" src="{{ site.url }}/{{ platform[1].img }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ platform[1].img }}">
+								</button>
+							{% else %}
+								<button class="social-btn" disabled>
+									<img class="social-img lazyload" alt="{{ member.alias }} {{ platform[0] }}" src="{{ site.url }}/{{ platform[1].img }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ platform[1].img }}">
+								</button>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<script src="{{ site.url }}/js/lazysizes.min.js"></script>
+<script src="{{ site.url }}/js/vanilla-tilt.min.js"></script>
+
+<script>
+	VanillaTilt.init(document.querySelectorAll(".data-tilt"), { speed: 1000, gyroscope: false });
+</script>

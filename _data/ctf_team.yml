@@ -1,0 +1,135 @@
+- alias: avantika
+  image: images/team/ava.png
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/github.svg
+        link: https://github.com/iamavu
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/iamavu
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/iamavu/
+
+- alias: bobbysox
+  image: images/team/bsox.jpg
+  social:
+    -
+      website:
+        img: images/social/web.svg
+        link: https://kyle41111.gitbook.io/pentest-journey/
+      github:
+        img: images/social/github.svg
+        link: https://github.com/kyle41111
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/TBobbysox
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/twc-kyle
+
+- alias: chronocruz
+  image: images/team/chrono.png
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/github.svg
+        link: https://github.com/chronocruz
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/chronocruz_exe
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/chronocruz
+
+- alias: Legend
+  image: images/team/legend.gif
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/disabled_github.svg
+        link: 
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/pwnlegend
+      linkedin:
+        img: images/social/disabled_linkedin.svg
+        link:
+
+- alias: nigamelastic
+  image: images/team/ksh.png
+  social:
+    -
+      website:
+        img: images/social/web.svg
+        link: https://kshitijnigam.com/
+      github:
+        img: images/social/github.svg
+        link: https://github.com/nigamelastic
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/nigamelastic
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/kshitijnigam
+
+- alias: starry-lord
+  image: images/contrib/starlord.png
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/github.svg
+        link: https://github.com/Starry-lord/
+      twitter:
+        img: images/social/disabled_twitter.svg
+        link:
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/sami-chakrouns
+
+- alias: taz
+  image: images/team/tanishq.jpg
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/disabled_github.svg
+        link: 
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/Tanishq1905
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/tanishq-sharma-30b7841ab
+
+- alias: thewhiteh4t
+  image: images/team/twh.png
+  social:
+    -
+      website:
+        img: images/social/web.svg
+        link: https://thewhiteh4t.github.io/
+      github:
+        img: images/social/github.svg
+        link: https://github.com/
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/thewhiteh4t
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/lohityapushkar

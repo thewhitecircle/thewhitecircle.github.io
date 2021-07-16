@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+┌── Message from thewhiteh4t ────────────────────────────────────────────────────┐
+│                                                                                │
+│   Hello, me and my team have spent countless hours in designing this website   │
+│   Please don't copy it, make something original from scratch                   │
+│   It is not that hard really!!                                                 │
+│                                                                                │
+└────────────────────────────────────────────────────────────────────────────────┘
+-->
+<head>
+	<title>{{ page.title }}</title>
+	<meta name="description" content="{{ page.desc }}">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:description" content="{{ page.desc }}">
+	<meta property="og:image" content="{{ site.url }}/{{ page.image }}">
+	<meta property="og:url" content="{{ page.url }}">
+	<meta property="og:site_name" content="{{ page.title }}">
+	<meta name="twitter:title" content="{{ page.title }}">
+	<meta name="twitter:description" content="{{ page.desc }}">
+	<meta name="twitter:image" content="{{ site.url }}/{{ page.image }}">
+	<meta name="twitter:creator" content="@thewhiteh4t">
+	<meta name="theme-color" content="#0F2027">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<meta name="robots" content="index, follow">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
+	<link rel="manifest" href="{{ site.url }}/site.webmanifest">
+	<style>html { visibility: hidden; opacity: 0; }</style>
+	<script>
+		{% if page.url == "/" %}
+    		var links = ["{{ site.url }}/css/augmented-ui.min.css", "{{ site.url }}/css/styles.css"];
+		{% else %}
+			var links = ["{{ site.url }}/css/augmented-ui.min.css", "{{ site.url }}/css/styles.css"];
+		{% endif %}
+		links.forEach(addLink)
+		function addLink(value) {
+			var link = document.createElement("link");
+			link.rel = "stylesheet";
+      		link.type = "text/css";
+      		link.href = value;
+      		document.getElementsByTagName('HEAD')[0].appendChild(link);
+		}
+	</script>
+</head>
+<body>
+	<div id="bg-img"></div>
+	<canvas id="bg-overlay"></canvas>
+	<header>
+		<div class="header-card m20">
+			<div class="logo-wrapper link" onclick="location.href='{{ site.url }}';">
+				<div class="logo">
+					<img class="logo-img" src="{{ site.url }}/images/twc_logo_sm.png">
+				</div>
+				<h1 class="title cyan-text">THE<br><span class="white-text">WHITE</span><br>CIRCLE</h1>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="breadcrumbs">
+				<span class="white-text">▶</span>
+				<span><a href="{{ site.url }}">Home</a></span>
+
+				{% for q in site.data.breadcrumbs %}
+					{% if page.parent == q.name and page.parent != "Home" %}
+						<span class="white-text">/</span>
+  				    	<span><a href="{{ site.url }}{{ q.url }}">{{ page.parent }}</a></span>
+					{% endif %}
+				{% endfor %}
+				{% if page.current != "Home" %}
+					<span class="white-text">/</span>
+					<span><a href="{{ page.url }}">{{ page.current }}</a></span>
+				{% endif %}
+				<span class="white-text">◀</span>
+			</div>
+			{{ content }}
+		</div>
+	</main>
+
+	<footer>
+		<div data-augmented-ui="tl-2-clip-x tr-2-clip-x both" class="aui-theme footer">
+			<div class="footer-text">
+				<span class="cyan-text">Designed By
+					<a href="https://thewhiteh4t.github.io" target="_blank"> thewhiteh4t </a>
+					using
+					<a href="http://augmented-ui.com" target="_blank"> Augmented-UI</a>,
+					<a href="https://micku7zu.github.io/vanilla-tilt.js/" target="_blank"> Tilt </a>
+					and
+					<a href="https://flickity.metafizzy.co/" target="_blank">Flickity</a>
+				</span>
+				<br>
+				<span class="cyan-text"><strong> Init :</strong> August 2020</span>
+			</div>
+		</div>
+	</footer>
+
+	<script src="{{ site.url }}/js/hexanim.js"></script>
+	<script src="{{ site.url }}/js/msg.js"></script>
+</body>
+</html>

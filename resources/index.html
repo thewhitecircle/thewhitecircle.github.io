@@ -1,0 +1,46 @@
+---
+layout: default
+title: Resources | The White Circle
+desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+image: images/twc_og_banner.jpg
+parent: Home
+current: Resources
+---
+
+<div class="reso-container">
+    <span class="red-text script res-gap">t1t4n@twc<span class="white-text">:~$ ./resources.sh</span></span>
+    <span class="cyan-text script res-gap">
+        <span class="yellow-text">[*]</span> These resources are compiled by TWC community<br>
+        <span class="yellow-text">[*]</span> To submit new resources you can create a pull request <a href="" target="_blank">here</a>
+    </span>
+    <div class="cat-bar">
+        <span class="white-text"><span class="green-text">[+]</span> CATEGORIES :</span>
+        <span class="green-text cat-btn" onclick="sjs.search('Tools')">Tools</span>
+        <span class="green-text cat-btn" onclick="sjs.search('Cheatsheets')">Cheatsheets</span>
+        <span class="green-text cat-btn" onclick="sjs.search('Blogs')" >Blogs</span>
+        <span class="green-text cat-btn" onclick="sjs.search('CTF')">CTF</span>
+        <span class="green-text cat-btn" onclick="sjs.search('Programming')">Programming</span>
+        <span class="green-text cat-btn" onclick="sjs.search('YouTube')">Channels</span>
+        <span class="green-text cat-btn" onclick="sjs.search('Courses')">Courses</span>
+    </div>
+    <div class="search-bar">
+        <span class="white-text"><span class="green-text">[+]</span>&nbsp;SEARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
+        <input class="cyan-text" type="text" id="search-input"></input>
+    </div>
+    <div class="resu-wrapper">
+        <ul id="resu-container"></ul>
+    </div>
+</div>
+
+<script src="{{ site.url }}/js/simple-jekyll-search.min.js"></script>
+<script>
+    var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('resu-container'),
+        json: 'search.json'
+    });
+
+    document.addEventListener('DOMContentLoaded', function(){
+        document.getElementById('search-input').focus();
+    });
+</script>

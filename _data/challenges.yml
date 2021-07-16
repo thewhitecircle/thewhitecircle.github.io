@@ -1,0 +1,63 @@
+- category: re
+  title: Home
+  creator: ava#8455
+  description: "No Data Stream..."
+  points: 10
+
+- category: osint
+  title: whoami
+  creator: ava#8455
+  description: "My girlfriend, Eva has gone missing, I am so worried about her, I heard she wrote email to someone about where she was going, so I need to access her email but it's asking me some question to which I don't know answer of D:
+I spoke to Mr. Underwood, her dad and he said she was asking some questions about her username somewhere on internet.
+Can you help me find her ?
+I need her cat's name, where she lives (yes, we are in long distance) and her birthdate <br> example flag : twc{misty_las_vegas_1306}"
+  points: 30
+
+- category: stego
+  title: Fiona
+  creator: Taz34#1949
+  description: "No Data Stream..."
+  points: 10
+
+- category: stego
+  title: Printed Pages
+  creator: Taz34#1949
+  description: "Flag Format : twc{dd_mm_yyyy}<br>
+Get the date and place that in the flag format twc{}"
+  points: 30
+
+- category: misc
+  title: SeeC
+  creator: Starry-Lord#0777
+  description: "Sick Seek SeeC"
+  points: 20
+
+- category: misc
+  title: RickRoll
+  creator: ava#8455
+  description: "You will get RickRolled!"
+  points: 10
+
+- category: crypto
+  title: Red_Pill_1337
+  creator: VGA#0333
+  description: "CipherCeption!!!"
+  points: 30
+
+- category: misc
+  title: Unknown
+  creator: susi2005kg#4484
+  description: "Steganography + Cryptography"
+  points: 10
+
+- category: crypto
+  title: smol
+  creator: ava#8455
+  description: "No Data Stream..."
+  points: 10
+
+- category: crypto
+  title: H3x Challenge
+  creator: Starry-Lord#0777
+  description: "Practice your hex skills!"
+  points: 10

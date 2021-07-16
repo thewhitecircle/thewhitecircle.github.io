@@ -1,0 +1,35 @@
+- alias: starry-lord
+  title: Server Booster
+  image: images/contrib/starlord.png
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/github.svg
+        link: https://github.com/Starry-lord
+      twitter:
+        img: images/social/disabled_twitter.svg
+        link:
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/sami-chakrouns/
+
+- alias: choco
+  title: Server Booster
+  image: images/contrib/choco.gif
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/disabled_github.svg
+        link:
+      twitter:
+        img: images/social/disabled_twitter.svg
+        link:
+      linkedin:
+        img: images/social/disabled_linkedin.svg
+        link:

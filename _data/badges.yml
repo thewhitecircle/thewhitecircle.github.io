@@ -1,0 +1,9 @@
+- name: CTF Creator
+  img: /images/badges/badge_ctf.png
+  desc: Create at least one challenge for TWC server
+  count: 6
+
+- name : Professor
+  img: /images/badges/badge_prof.png
+  desc: Teach people, help with their concepts in TWC server
+  count: 4

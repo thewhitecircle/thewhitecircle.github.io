@@ -1,0 +1,53 @@
+- alias: thewhiteh4t
+  title: Founder
+  image: images/team/twh.png
+  social:
+    -
+      website:
+        img: images/social/web.svg
+        link: https://thewhiteh4t.github.io/
+      github:
+        img: images/social/github.svg
+        link: https://github.com/
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/thewhiteh4t
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/lohityapushkar
+
+- alias: avantika
+  title: Community Leader
+  image: images/team/ava.png
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/github.svg
+        link: https://github.com/iamavu
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/iamavu
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/iamavu/
+
+- alias: xxc3nsoredxx
+  title: Community Leader
+  image: images/team/xxc.png
+  social:
+    -
+      website:
+        img: images/social/disabled_web.svg
+        link:
+      github:
+        img: images/social/github.svg
+        link: https://github.com/xxc3nsoredxx
+      twitter:
+        img: images/social/disabled_twitter.svg
+        link:
+      linkedin:
+        img: images/social/disabled_linkedin.svg
+        link:
