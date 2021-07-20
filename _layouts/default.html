@@ -70,22 +70,6 @@
 
 	<main>
 		<div class="container">
-			<div class="breadcrumbs">
-				<span class="white-text">▶</span>
-				<span><a href="{{ site.url }}">Home</a></span>
-
-				{% for q in site.data.breadcrumbs %}
-					{% if page.parent == q.name and page.parent != "Home" %}
-						<span class="white-text">/</span>
-  				    	<span><a href="{{ site.url }}{{ q.url }}">{{ page.parent }}</a></span>
-					{% endif %}
-				{% endfor %}
-				{% if page.current != "Home" %}
-					<span class="white-text">/</span>
-					<span><a href="{{ page.url }}">{{ page.current }}</a></span>
-				{% endif %}
-				<span class="white-text">◀</span>
-			</div>
 			{{ content }}
 		</div>
 	</main>

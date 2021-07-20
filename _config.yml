@@ -14,3 +14,5 @@ discord: "https://discord.gg/MtKK7U4"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+markdown: kramdown

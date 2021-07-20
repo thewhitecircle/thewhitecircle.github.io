@@ -3,8 +3,6 @@ layout: default
 title: The White Circle | CTF Team
 desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
 image: images/twc_og_banner.jpg
-parent: CTF
-current: Team
 ---
 
 <div data-augmented-ui="tl-clip tr-clip br-2-clip-x bl-2-clip-x both" class="aui-theme intro-card m10">
@@ -19,7 +17,7 @@ current: Team
 </div>
 
 <div class="ctf-btn-wrapper">
-  <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ch-intro-btn white-text" onclick="window.open('https://github.com/thewhitecircle/ctf_writeups');">WRITEUPS</div>
+  <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ch-intro-btn white-text" onclick="location.href='{{ page.url }}ctf_writeups/'">WRITEUPS</div>
 </div>
 
 <div class="ctf-team-wrapper">
@@ -29,7 +27,7 @@ current: Team
 			<div class="member-sub-card sub-tilt">
 				<div class="member-meta-left">
 					<div data-augmented-ui="tr-clip bl-clip border" class="aui-theme member-img-wrapper">
-						<img class="member-img lazyload" src="{{ site.url }}/{{ member.image }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ member.image }}">
+						<img class="member-img lazyload" src="{{ site.url }}/{{ member.image }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ member.image }} ">
 					</div>
 				</div>
 				<div class="member-meta-right">

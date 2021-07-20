@@ -1,0 +1,55 @@
+- name: HSCTF 2021
+  url: hsctf_2021/
+  files: 
+    - algo
+    - crypto
+    - misc
+    - pwn
+    - web
+
+- name: M0leCon 2021
+  url: m0lecon_2021/
+  files:
+    - web
+
+- name: SDCTF 2021
+  url: sdctf_2021/
+  files:
+    - crypto
+    - misc
+    - osint
+    - pwn
+    - re
+    - web
+
+- name: WPICTF 2021
+  url: wpictf_2021/
+  files:
+    - forensics
+    - misc
+    - pwn
+    - re
+    - stego
+    - web
+
+- name: Cyber Apocalypse 2021
+  url: cyber_apocalypse_2021/
+  files:
+    - crypto
+    - forensics
+    - hardware
+    - misc
+    - re
+    - web
+
+- name: Nahamcon 2021
+  url: nahamcon_2021/
+  files:
+    - android
+    - crypto
+    - forensics
+    - misc
+    - mission
+    - osint
+    - stego
+    - web

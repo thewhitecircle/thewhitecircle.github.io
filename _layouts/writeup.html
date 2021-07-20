@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<h1 class="card-title white-text">{{ page.ctf }}</h1>
+{% for entry in site.data.writeups %}
+{% if entry.name == page.ctf %}
+{% assign entry_blk = entry  %}
+{% endif %}
+{% endfor %}
+
+<div class="ctf-cat-bar">
+{% for category in entry_blk.files %}
+<div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="openW('{{ category }}')">{{ category }}</div>
+{% endfor %}
+
+</div>
+{% for category in entry_blk.files %}
+<div id="{{ category }}" class="ctf-w">
+{% capture mkd %}
+{% include_relative {{ category }}.md %}
+{% endcapture mkd %}
+{{ mkd | markdownify }}
+</div>
+{% endfor %}
+
+<script>
+  var x = document.getElementsByClassName("ctf-w");
+  for (i = 1; i < x.length; i++) {
+        x[i].style.display = "none";
+  }
+
+  function openW(id_name) {
+        var i;
+    for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+    }
+    document.getElementById(id_name).style.display = "block";
+  }
+</script>

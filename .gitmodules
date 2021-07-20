@@ -1,0 +1,3 @@
+[submodule "ctf/team/ctf_writeups"]
+	path = ctf/team/ctf_writeups
+	url = https://github.com/thewhitecircle/ctf_writeups

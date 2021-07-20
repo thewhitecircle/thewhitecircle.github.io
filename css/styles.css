@@ -181,3 +181,19 @@ td:nth-child(4) { text-align: center; }
 .res-gap { margin-bottom: 15px; }
 .flag-wrap { width: 100%; text-align: center; }
 #flag { cursor: default; }
+
+.ctf-cat-bar { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; }
+.ctf-cat-btn { padding: 15px; margin: 5px; cursor: pointer; width: 6.5em; height: auto; font-family: 'Tenika'; font-size: 0.7em; text-transform: uppercase; text-align: center; }
+.ctf-w { width: 100%; height:100%; }
+.ctf-w img { max-width: 100%; height: auto; box-shadow: 0 0 10px cyan; display: block; margin: 0 auto; }
+.ctf-w p { color: white; text-shadow: 0 0 5px #000000, 0 0 10px #ffffff; }
+.ctf-w span { color: white; text-shadow: 0 0 5px #000000, 0 0 10px #ffffff; }
+.ctf-w ul { color: white; text-shadow: 0 0 5px #000000, 0 0 10px #ffffff; }
+.ctf-w h1 { color: white; text-shadow: 0 0 5px #000000, 0 0 10px #ffffff; }
+.ctf-w h2 { color: #ff9800; text-shadow: 0 0 5px #000000, 0 0 10px #ff9800; }
+.ctf-w pre { background-color: #212121; padding: 10px; border-radius: 5px; overflow-x: scroll; scrollbar-width: none; }
+.ctf-w pre::-webkit-scrollbar { height: 0px; width: 0px; background: transparent; }
+.ctf-w code { color: red; text-shadow: 0 0 10px #000000, 0 0 10px #ff0000; }
+.ctf-w code span { color: red; text-shadow: 0 0 10px #000000, 0 0 10px #ff0000; }
+.ctf-w blockquote p { color: #00FF00; text-shadow: 0 0 10px #000000, 0px 0px 10px #00FF00; }
+.ctf-w hr { color: #ff9800; text-shadow: 0 0 5px #000000, 0 0 10px #ff9800; }
