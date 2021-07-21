@@ -17,11 +17,15 @@ image: images/twc_og_banner.jpg
         <div class="badge-card-wrapper data-tilt">
             <div data-augmented-ui="br-clip both" class="aui-theme badge-card"></div>
             <div class="badge-sub-card sub-tilt">
-                <img class="badge-img lazyload" alt="The White Cirle Badges" src="{{ site.url }}{{ bdg.img }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}{{ bdg.img }}">
-                <div class="badge-meta">
-                    <span class="badge-name yellow-text">{{ bdg.name }}</span>
-                    <span class="badge-desc cyan-text">{{ bdg.desc }}</span>
-                    <span class="badge-count cyan-text"><span class="green-text">{{ bdg.count }}</span> members awarded</span>
+                <div class="badge-meta-left">
+                    <img class="badge-img lazyload" alt="The White Cirle Badges" src="{{ site.url }}{{ bdg.img }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}{{ bdg.img }}">
+                </div>
+                <div class="badge-meta-right">
+                    <div class="badge-meta">
+                        <span class="badge-name yellow-text">{{ bdg.name }}</span>
+                        <span class="badge-desc cyan-text">{{ bdg.desc }}</span>
+                        <span class="badge-count cyan-text"><span class="green-text">{{ bdg.count }}</span> members awarded</span>
+                    </div>
                 </div>
             </div>
         </div>
