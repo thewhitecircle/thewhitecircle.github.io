@@ -255,3 +255,15 @@
   category: Blogs
   tags: blog
   url: https://portswigger.net/research
+
+- title: Testing for Server Side Template Injection
+  desc: OWASP testing guide for SSTI
+  category: Vulnerabilities
+  tags: vuln, ssti, owasp
+  url: https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server-side_Template_Injection
+
+- title: Server-side template injection
+  desc: PortSwigger testing guide for SSTI
+  category: Vulnerabilities
+  tags: vuln, ssti, portswigger
+  url: https://portswigger.net/web-security/server-side-template-injection
