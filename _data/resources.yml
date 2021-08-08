@@ -267,3 +267,33 @@
   category: Vulnerabilities
   tags: vuln, ssti, portswigger
   url: https://portswigger.net/web-security/server-side-template-injection
+  
+ 
+- title: Seclists
+  desc: Wordlists for dictionary based brute force attacks. Contains wordlists for usernames, passwords and subdomains for enumerations
+  category: Tools
+  tags: wordlists, seclists, passwordlists, usernamelist, subdomainlist
+  url: https://github.com/danielmiessler/SecLists
+ 
+ 
+- title: fuzzdb
+  desc: FuzzDB contains comprehensive lists of attack payload primitives for fault injection testing
+  category: Tools
+  tags: payloads, wordlists
+  url: https://github.com/fuzzdb-project/fuzzdb
+
+- title: Commonspeak2
+  desc: Commonspeak2 leverages publicly available datasets from Google BigQuery to generate content discovery and subdomain wordlists.
+  category: Tools
+  tags: subdomain enumeration, wordlists
+  url: https://github.com/assetnote/commonspeak2-wordlists
+  
+- title: Brute Force and Dictionary Attacks
+  desc: Rapid7 Article about Brute Force and Dictionary attacks
+  category: Blog
+  tags: Bruteforce, Dictionary attacks 
+  url: https://www.rapid7.com/fundamentals/brute-force-and-dictionary-attacks/
+
+
+  
+ 
