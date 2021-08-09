@@ -267,14 +267,12 @@
   category: Vulnerabilities
   tags: vuln, ssti, portswigger
   url: https://portswigger.net/web-security/server-side-template-injection
-  
- 
+
 - title: Seclists
   desc: Wordlists for dictionary based brute force attacks. Contains wordlists for usernames, passwords and subdomains for enumerations
   category: Tools
   tags: wordlists, seclists, passwordlists, usernamelist, subdomainlist
   url: https://github.com/danielmiessler/SecLists
- 
  
 - title: fuzzdb
   desc: FuzzDB contains comprehensive lists of attack payload primitives for fault injection testing
@@ -293,7 +291,3 @@
   category: Blog
   tags: Bruteforce, Dictionary attacks 
   url: https://www.rapid7.com/fundamentals/brute-force-and-dictionary-attacks/
-
-
-  
- 
