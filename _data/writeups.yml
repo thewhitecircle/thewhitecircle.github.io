@@ -1,3 +1,12 @@
+- name: UIUCTF 2021
+  url: uiuctf_2021/
+  files:
+    - crypto
+    - forensics
+    - misc
+    - osint
+    - pwn
+
 - name: HSCTF 2021
   url: hsctf_2021/
   files: 
