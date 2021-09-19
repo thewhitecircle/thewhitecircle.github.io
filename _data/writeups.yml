@@ -1,3 +1,15 @@
+- name: HacktivityCon 2021
+  url: hacktivitycon_2021/
+  files:
+    - crypto
+    - misc
+    - mobile
+    - osint
+    - pwn
+    - scripting
+    - warmups
+    - web
+
 - name: UIUCTF 2021
   url: uiuctf_2021/
   files:
