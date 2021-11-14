@@ -1,0 +1,8 @@
+---
+layout: none
+---
+
+User-agent: *
+Disallow: /e4steregg
+
+Sitemap: {{ site.url }}/sitemap.xml
