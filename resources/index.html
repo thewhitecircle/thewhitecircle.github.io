@@ -8,38 +8,184 @@ image: images/twc_og_banner.jpg
 <div class="reso-container">
     <span class="red-text script res-gap">t1t4n@twc<span class="white-text">:~$ ./resources.sh</span></span>
     <span class="cyan-text script res-gap">
-        <span class="yellow-text">[*]</span> These resources are compiled by TWC community<br>
-        <span class="yellow-text">[*]</span> To submit new resources you can create a pull request <a href="" target="_blank">here</a>
+        <span class="yellow-text">[*]</span> These resources are curated by TWC community<br>
     </span>
     <div class="cat-bar">
-        <span class="white-text"><span class="green-text">[+]</span> CATEGORIES :</span>
-        <span class="green-text cat-btn" onclick="sjs.search('Tools')">Tools</span>
-        <span class="green-text cat-btn" onclick="sjs.search('Cheatsheets')">Cheatsheets</span>
-        <span class="green-text cat-btn" onclick="sjs.search('Blogs')" >Blogs</span>
-        <span class="green-text cat-btn" onclick="sjs.search('CTF')">CTF</span>
-        <span class="green-text cat-btn" onclick="sjs.search('Vulnerabilities')">Vulnerabilities</span>
-        <span class="green-text cat-btn" onclick="sjs.search('Programming')">Programming</span>
-        <span class="green-text cat-btn" onclick="sjs.search('YouTube')">Channels</span>
-        <span class="green-text cat-btn" onclick="sjs.search('Courses')">Courses</span>
+        <fieldset>
+            <legend class="white-text">&nbsp;CATEGORIES&nbsp;</legend>
+            <div class="cat-container">
+                <span class="green-text cat-btn" onclick="show('blogs')">Blogs</span>
+                <span class="green-text cat-btn" onclick="show('channels')">Channels</span>
+                <span class="green-text cat-btn" onclick="show('cheatsheets')">Cheatsheets</span>
+                <span class="green-text cat-btn" onclick="show('courses')">Courses</span>
+                <span class="green-text cat-btn" onclick="show('ctf')">CTF</span>
+                <span class="green-text cat-btn" onclick="show('programming')">Programming</span>
+                <span class="green-text cat-btn" onclick="show('tools')">Tools</span>
+                <span class="green-text cat-btn" onclick="show('vulns')">Vulnerabilities</span>
+            </div>
+        </fieldset>
     </div>
-    <div class="search-bar">
-        <span class="white-text"><span class="green-text">[+]</span>&nbsp;SEARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
-        <input class="cyan-text" type="text" id="search-input"></input>
-    </div>
+    <form class="search-bar" id="search-form" onSubmit="return false;">
+        <fieldset class="search-fs">
+            <legend class="white-text">&nbsp;SEARCH&nbsp;</legend>
+            <input class="cyan-text" type="text" id="search-input">
+        </fieldset>
+    </form>
     <div class="resu-wrapper">
-        <ul id="resu-container"></ul>
+        <fieldset>
+            <ul id="resu-container"></ul>
+        </fieldset>
     </div>
 </div>
 
-<script src="{{ site.url }}/js/simple-jekyll-search.min.js"></script>
+<script src="{{ site.url }}/js/sql-wasm.min.js"></script>
 <script>
-    var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('resu-container'),
-        json: 'search.json'
+    var db;
+    var contents;
+    var tab = document.getElementById('resu-container');
+    var sbox = document.getElementById('search-input');
+    var xhr;
+
+    window.setTimeout(function () {
+        sbox.focus();
+    }, 0);
+
+    sbox.onkeydown = function(e){
+        if(e.keyCode == 13){
+            lookup();
+            document.getElementById('search-form').reset();
+        }
+    };
+
+    config = {
+        locateFile: filename => '{{ site.url }}/js/sql-wasm.wasm'
+    }
+
+    initSqlJs(config).then(function(SQL){
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', '{{ site.url }}/resources/resources.db', true);
+        xhr.responseType = 'arraybuffer';
+        xhr.onload = e => {
+            const uInt8Array = new Uint8Array(xhr.response);
+            db = new SQL.Database(uInt8Array);
+            db.exec('CREATE VIRTUAL TABLE t1 USING fts4(title, desc, url, tags)');
+            db.exec('INSERT INTO t1 SELECT title, desc, url, tags FROM blogs');
+            db.exec('INSERT INTO t1 SELECT title, desc, url, tags FROM channels');
+            db.exec('INSERT INTO t1 SELECT title, desc, url, tags FROM cheatsheets');
+            db.exec('INSERT INTO t1 SELECT title, desc, url, tags FROM courses');
+            db.exec('INSERT INTO t1 SELECT title, desc, url, tags FROM ctf');
+            db.exec('INSERT INTO t1 SELECT title, desc, url, tags FROM programming');
+            db.exec('INSERT INTO t1 SELECT title, desc, url, tags FROM tools');
+            db.exec('INSERT INTO t1 SELECT title, desc, url, tags FROM vulns');
+        }
+        xhr.send();
     });
 
-    document.addEventListener('DOMContentLoaded', function(){
-        document.getElementById('search-input').focus();
-    });
+    function parse(value, index, array) {
+        let result = '';
+        title = value[0];
+        desc = value[1];
+        link = value[2];
+        result += `
+            <li>
+                <ul>
+                    <li class="yellow-text res-title">
+                        <span>${title}</span>
+                    </li>
+                    <li class="white-text res-desc">
+                        <span>${desc}</span>
+                    </li>
+                    <li class="res-url">
+                        <a href="${link}" target="_blank">${link}</a>
+                    </li>
+                </ul>
+            </li>`
+        tab.innerHTML += result;
+    }
+
+    function clear() {
+        while (tab.firstChild) tab.removeChild(tab.firstChild);
+    }
+
+    function show(table_name) {
+        clear();
+        const valid_tables = ['blogs', 'channels', 'cheatsheets', 'courses', 'ctf', 'programming', 'tools', 'vulns'];
+        if (!valid_tables.includes(table_name)) { 
+            let err = '';
+            err += `
+                <li>
+                    <ul>
+                        <li class="yellow-text">
+                            <span>Invalid table name :(</span>
+                        </li>
+                    </ul>
+                </li>`
+            tab.innerHTML += err;
+            return 
+        }
+
+        items = db.exec('SELECT title, desc, url FROM ' + table_name);
+        try {
+            items[0].values.forEach(parse);
+        }
+        catch {
+            let err = '';
+            err += `
+                <li>
+                    <ul>
+                        <li class="yellow-text">
+                            <span>No resources are available in this category, come back later.</span>
+                        </li>
+                    </ul>
+                </li>`
+            tab.innerHTML += err;
+        };
+    }
+
+    function lookup() {
+        clear();
+        let err = '';
+        let q = sbox.value;
+        let regex = /^[a-zA-Z0-9\s]*$/;
+
+        if (q.length == 0 || q.length > 20) {
+            err += `<li>
+                        <ul>
+                            <li class="yellow-text">
+                                <span>Query was either too short or too long :(</span>
+                            </li>
+                        </ul>
+                    </li>`
+            tab.innerHTML += err;
+            return
+        }
+
+        if (!regex.test(sbox.value)) {
+            err += `<li>
+                        <ul>
+                            <li class="yellow-text">
+                                <span>Invalid query :(</span>
+                            </li>
+                        </ul>
+                    </li>`
+            tab.innerHTML += err;
+            return
+        }
+
+        results = db.exec(`SELECT * FROM t1 WHERE title MATCH '${q}*' OR desc MATCH '${q}*' OR tags MATCH '${q}*'`);
+        try {
+            results[0].values.forEach(parse);
+        }
+        catch {
+            let err = '';
+            err += `<li>
+                        <ul>
+                            <li class="yellow-text">
+                                <span>No matches found :(</span>
+                            </li>
+                        </ul>
+                    </li>`
+        tab.innerHTML += err;
+        };
+    }
 </script>
