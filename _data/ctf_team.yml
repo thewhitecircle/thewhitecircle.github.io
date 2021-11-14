@@ -49,23 +49,6 @@
         img: images/social/disabled_linkedin.svg
         link:
 
-- alias: chronocruz
-  image: images/team/chrono.png
-  social:
-    -
-      website:
-        img: images/social/disabled_web.svg
-        link:
-      github:
-        img: images/social/github.svg
-        link: https://github.com/chronocruz
-      twitter:
-        img: images/social/twitter.svg
-        link: https://twitter.com/chronocruz_exe
-      linkedin:
-        img: images/social/linkedin.svg
-        link: https://www.linkedin.com/in/chronocruz
-
 - alias: Legend
   image: images/team/legend.gif
   social:

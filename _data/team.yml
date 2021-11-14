@@ -33,21 +33,3 @@
       linkedin:
         img: images/social/linkedin.svg
         link: https://www.linkedin.com/in/iamavu/
-
-- alias: xxc3nsoredxx
-  title: Community Leader
-  image: images/team/xxc.png
-  social:
-    -
-      website:
-        img: images/social/disabled_web.svg
-        link:
-      github:
-        img: images/social/github.svg
-        link: https://github.com/xxc3nsoredxx
-      twitter:
-        img: images/social/disabled_twitter.svg
-        link:
-      linkedin:
-        img: images/social/disabled_linkedin.svg
-        link:
