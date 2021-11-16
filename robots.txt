@@ -3,6 +3,6 @@ layout: none
 ---
 
 User-agent: *
-Disallow: /e4steregg
+Allow: /
 
 Sitemap: {{ site.url }}/sitemap.xml

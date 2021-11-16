@@ -198,3 +198,6 @@ fieldset { border-radius: 5px; border: 1.5px solid #ff9800; }
 .ctf-w code span { color: red; text-shadow: 0 0 10px #000000, 0 0 10px #ff0000; }
 .ctf-w blockquote p { color: #00FF00; text-shadow: 0 0 10px #000000, 0px 0px 10px #00FF00; }
 .ctf-w hr { color: #ff9800; text-shadow: 0 0 5px #000000, 0 0 10px #ff9800; }
+
+.wu-container { width: 100%; height: auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 10px; }
+.wu-btn { width: 500px; height: 60px; margin: 10px; display: flex; justify-content: center; align-items: center; padding: 20px; cursor: pointer; }
