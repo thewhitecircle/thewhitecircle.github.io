@@ -1,3 +1,16 @@
+- name: MetaSploit 2021
+  url: metasploit_2021/
+  files:
+    - 2_of_spades
+    - 3_of_hearts
+    - 4_of_diamonds
+    - 4_of_hearts
+    - 5_of_diamonds
+    - 9_of_diamonds
+    - 10_of_clubs
+    - ace_of_hearts
+    - jack_of_hearts
+
 - name: HacktivityCon 2021
   url: hacktivitycon_2021/
   files:
