@@ -88,8 +88,8 @@
   social:
     -
       website:
-        img: images/social/disabled_web.svg
-        link:
+        img: images/social/web.svg
+        link: https://starrylord.ch
       github:
         img: images/social/github.svg
         link: https://github.com/Starry-lord/
