@@ -1,3 +1,14 @@
+- name: Nahamcon 2022
+  url: nahamcon_2022/
+  files:
+    - crypto
+    - keeber_security
+    - misc
+    - mobile
+    - pwn
+    - warmups
+    - web
+
 - name: MetaSploit 2021
   url: metasploit_2021/
   files:
