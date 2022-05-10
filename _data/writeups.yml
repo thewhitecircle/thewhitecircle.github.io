@@ -1,3 +1,14 @@
+- name: SDCTF 2022
+  url: sdctf_2022/
+  files:
+    - crypto
+    - forensics
+    - jail
+    - misc
+    - osint
+    - pwn
+    - web
+
 - name: Nahamcon 2022
   url: nahamcon_2022/
   files:
