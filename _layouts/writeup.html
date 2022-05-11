@@ -11,7 +11,9 @@ layout: default
 
 <div class="ctf-cat-bar">
 {% for category in entry_blk.files %}
-<div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="openW('{{ category }}')">{{ category }}</div>
+<a class="anchor-link" href="#{{ category }}">
+      <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="openW('{{ category }}')">{{ category }}</div>
+</a>
 {% endfor %}
 
 </div>
@@ -31,10 +33,41 @@ layout: default
   }
 
   function openW(id_name) {
-        var i;
-    for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-    }
-    document.getElementById(id_name).style.display = "block";
+      var i;
+      for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+      }
+      try {
+            document.getElementById(id_name).style.display = "block";
+            let w_id = window.location.hash.replace('#', '');
+      } catch(e) {
+            console.log(e);
+            let curr_url = window.location.href;
+            let frag_id = window.location.hash;
+            base_url = curr_url.replace(frag_id, "");
+            window.location.href = base_url;
+      }
+  }
+
+  let frag_id = window.location.hash;
+  if (frag_id) {
+      let clean_frag_id = frag_id.substring(1);
+      let parent_elem = document.getElementById(clean_frag_id).parentNode
+      let parent_cl = parent_elem.className;
+      let parent_id = parent_elem.id;
+      if (parent_cl == 'ctf-w') {
+            openW(parent_id);
+            document.location.hash = frag_id;
+      } else {
+            openW(clean_frag_id);
+      }
+  }
+
+  const list = document.getElementsByTagName('h2');
+  let index = 0;
+  while (index < list.length) {
+      item = list[index];
+      item.outerHTML = `<a class="anchor-link" href="#${item.innerHTML.replace(" ", '-').replace(/[^a-zA-Z0-9\- ]/g, '').toLowerCase()}">${item.outerHTML}</a>`;
+      index++;
   }
 </script>
