@@ -67,7 +67,7 @@ layout: default
   let index = 0;
   while (index < list.length) {
       item = list[index];
-      item.outerHTML = `<a class="anchor-link" href="#${item.innerHTML.replace(" ", '-').replace(/[^a-zA-Z0-9\- ]/g, '').toLowerCase()}">${item.outerHTML}</a>`;
+      item.outerHTML = `<a class="anchor-link" href="#${item.innerHTML.replaceAll(" ", '-').replaceAll(/[^a-zA-Z0-9\- ]/g, '').toLowerCase()}">${item.outerHTML}</a>`;
       index++;
   }
 </script>
