@@ -1,3 +1,11 @@
+- name: Cyber Apocalypse 2022
+  url: cyber_apocalypse_2022/
+  files:
+    - forensics
+    - pwn
+    - re
+    - web
+
 - name: SDCTF 2022
   url: sdctf_2022/
   files:
