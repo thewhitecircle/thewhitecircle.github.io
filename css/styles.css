@@ -14,7 +14,17 @@
 	src: url(../fonts/JetBrainsMono-Regular.ttf) format('truetype');
 }
 
-html { background-color: #000000; height: 100%; width: 100%; margin: 0; padding: 0; scroll-behavior: smooth; font-family: 'JetBrainsMono', monospace; visibility: visible; opacity: 1; overflow: scroll; overflow-x: hidden; scrollbar-width: none; font-size: 16px; }
+html { background-color: #000000; height: 100%; width: 100%; margin: 0; padding: 0; scroll-behavior: smooth; font-family: 'JetBrainsMono', monospace; visibility: visible; opacity: 1; overflow: scroll; /*overflow-x: hidden; /*scrollbar-width: none;*/ font-size: 16px; scrollbar-color: white cyan; }
+body::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+body::-webkit-scrollbar-thumb { /* Foreground */
+  background: white;
+}
+body::-webkit-scrollbar-track { /* Background */
+  background: cyan;
+}
 @media (min-width: 640px) and (max-width: 1439px) { html { font-size: calc(16px + (20 - 16) * (100vw - 640px) / (1439 - 640)); } }
 /* Define max font size */
 @media (min-width: 1440px) { html { font-size: 20px; } }
