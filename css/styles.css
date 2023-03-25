@@ -214,3 +214,8 @@ fieldset { border-radius: 5px; border: 1.5px solid #ff9800; }
 
 .anchor-link { outline: 0; -webkit-tap-highlight-color: transparent; word-break: normal !important; }
 .anchor-link:link { text-decoration: none; }
+
+.gform-input { background-color: transparent; outline: none; border: 0; max-width: 100%; height: auto; font-size: 0.9em; font-family: 'JetBrainsMono'; }
+::placeholder { color: grey; }
+.gform-btn { background-color: transparent; cursor: pointer; border: 1.5px solid #00e1ff; border-radius: 5px; padding: 5px; margin: 5px; font-size: 0.9em; }
+.gform-btn-cont { display: block; text-align: center; margin: 10px; }
