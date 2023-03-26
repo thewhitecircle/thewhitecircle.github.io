@@ -133,3 +133,20 @@
       linkedin:
         img: images/social/linkedin.svg
         link: https://www.linkedin.com/in/lohityapushkar
+
+- alias: warlordsam
+  image: images/team/warlordsam.gif
+  social:
+    -
+      website:
+        img: images/social/web.svg
+        link: https://warlordsam07.github.io/
+      github:
+        img: images/social/github.svg
+        link: https://github.com/warlordsam07
+      twitter:
+        img: images/social/twitter.svg
+        link: https://twitter.com/warlordsam077
+      linkedin:
+        img: images/social/linkedin.svg
+        link: https://www.linkedin.com/in/pratik-lagaskar-a8747b20a/
