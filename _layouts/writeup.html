@@ -10,6 +10,7 @@ layout: default
 {% endfor %}
 
 <div class="ctf-cat-bar">
+      <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="location.href='{{ site.url }}/ctf/team/ctf_writeups/';">◀</div>
 {% for category in entry_blk.files %}
 <a class="anchor-link" href="#{{ category }}">
       <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="openW('{{ category }}')">{{ category }}</div>
