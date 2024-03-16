@@ -1,3 +1,13 @@
+- name: Cyber Apocalypse 2024
+  url: cyber_apocalypse_2024/
+  files:
+    - crypto
+    - forensics
+    - hardware
+    - misc
+    - re
+    - web
+
 - name: Cyber Apocalypse 2023
   url: cyber_apocalypse_2023/
   files:
