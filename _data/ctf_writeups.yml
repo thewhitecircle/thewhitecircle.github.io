@@ -496,9 +496,9 @@ Sdctf 2021:
       file: hIDeandseek
     - name: hIDe and seek 2
       file: hIDeandseek2
-    - name: 'This flag has been stolen:'
+    - name: This flag has been stolen
       file: Thisflaghasbeenstolen
-    - name: 'Speed-Studying 2 :'
+    - name: Speed-Studying 2
       file: SpeedStudying2
   - name: crypto
     challenges:
@@ -538,7 +538,7 @@ Wpictf 2021:
     challenges:
     - name: DFIR
       file: DFIR
-    - name: 'Holmes:'
+    - name: Holmes
       file: Holmes
   - name: stego
     challenges:
@@ -566,7 +566,7 @@ Wpictf 2021:
       file: m4h
   - name: re
     challenges:
-    - name: "Baby\u2019s First Reversing"
+    - name: "Baby's First Reversing"
       file: BabysFirstReversing
 Cyber Apocalypse 2021:
   categories:
@@ -614,7 +614,7 @@ Cyber Apocalypse 2021:
       file: Passphrase
   - name: hardware
     challenges:
-    - name: 'Serial Logs:'
+    - name: Serial Logs
       file: SerialLogs
     - name: Compromised
       file: Compromised
@@ -648,7 +648,7 @@ Nahamcon 2021:
       file: veebee
     - name: Dice Roll
       file: DiceRoll
-    - name: 'Car Keys:'
+    - name: Car Keys
       file: CarKeys
     - name: Treasure
       file: Treasure
