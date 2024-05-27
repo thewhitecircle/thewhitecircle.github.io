@@ -32,7 +32,7 @@
 	<style>html { visibility: hidden; opacity: 0; }</style>
 	<script>
 		{% if page.url == "/" %}
-    		var links = ["{{ site.url }}/css/augmented-ui.min.css", "{{ site.url }}/css/styles.css"];
+			var links = ["{{ site.url }}/css/augmented-ui.min.css", "{{ site.url }}/css/styles.css"];
 		{% else %}
 			var links = ["{{ site.url }}/css/augmented-ui.min.css", "{{ site.url }}/css/styles.css"];
 		{% endif %}
@@ -40,9 +40,9 @@
 		function addLink(value) {
 			var link = document.createElement("link");
 			link.rel = "stylesheet";
-      		link.type = "text/css";
-      		link.href = value;
-      		document.getElementsByTagName('HEAD')[0].appendChild(link);
+			link.type = "text/css";
+			link.href = value;
+			document.getElementsByTagName('HEAD')[0].appendChild(link);
 		}
 	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -56,7 +56,6 @@
 </head>
 <body>
 	<div id="bg-img"></div>
-	<canvas id="bg-overlay"></canvas>
 	<div id="simple-bar"></div>
 	<header>
 		<div class="header-card m20">
@@ -91,7 +90,6 @@
 		</div>
 	</footer>
 
-	<script src="{{ site.url }}/js/hexanim.js"></script>
 	<script src="{{ site.url }}/js/msg.js"></script>
 </body>
 </html>
