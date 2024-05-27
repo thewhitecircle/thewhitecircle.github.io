@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="ctf-cat-bar">
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="location.href='{{ site.url }}/{{ site.ctf_dir }}/{{ page.parent }}/'">◀</div>
+</div>
+
+<div class="ctf-w">
+{% capture mkd %}
+{{ content }}
+{% endcapture mkd %}
+{{ mkd | markdownify }}
+</div>

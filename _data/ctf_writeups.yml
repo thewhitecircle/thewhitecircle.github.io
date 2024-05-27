@@ -1,0 +1,700 @@
+Cyber Apocalypse 2024:
+  categories:
+  - name: forensics
+    challenges:
+    - name: It Has Begun
+      file: ItHasBegun
+    - name: Urgent
+      file: Urgent
+    - name: An Unusual sighting
+      file: AnUnusualsighting
+    - name: Phreaky
+      file: Phreaky
+    - name: Fake Boost
+      file: FakeBoost
+    - name: Oblique Final
+      file: ObliqueFinal
+    - name: Confinement
+      file: Confinement
+    - name: Game Invitation
+      file: GameInvitation
+    - name: Data Siege
+      file: DataSiege
+    - name: Pursue the tracks
+      file: Pursuethetracks
+  - name: crypto
+    challenges:
+    - name: Primary Knowledge
+      file: PrimaryKnowledge
+    - name: Makeshift
+      file: Makeshift
+    - name: Dynastic
+      file: Dynastic
+  - name: web
+    challenges:
+    - name: Flag Command
+      file: FlagCommand
+    - name: TimeKORP
+      file: TimeKORP
+    - name: LockTalk
+      file: LockTalk
+    - name: Labyrinth Linguist
+      file: LabyrinthLinguist
+    - name: KORP Terminal
+      file: KORPTerminal
+  - name: misc
+    challenges:
+    - name: Character
+      file: Character
+    - name: Stop Drop and Roll
+      file: StopDropandRoll
+    - name: Unbreakable
+      file: Unbreakable
+  - name: re
+    challenges:
+    - name: Packed
+      file: Packed
+    - name: LootStash
+      file: LootStash
+    - name: Boxcutter
+      file: Boxcutter
+  - name: hardware
+    challenges:
+    - name: BunnyPass
+      file: BunnyPass
+    - name: Maze
+      file: Maze
+Cyber Apocalypse 2023:
+  categories:
+  - name: forensics
+    challenges:
+    - name: Plaintext Tleasure
+      file: PlaintextTleasure
+    - name: Alien cradle
+      file: Aliencradle
+    - name: Extraterrestrial persistence
+      file: Extraterrestrialpersistence
+    - name: Roten
+      file: Roten
+    - name: Packet cyclone
+      file: Packetcyclone
+    - name: Artifacts of disastrous sightings
+      file: Artifactsofdisastroussightings
+    - name: Relic Maps
+      file: RelicMaps
+    - name: Interstellar C2
+      file: InterstellarC2
+  - name: crypto
+    challenges:
+    - name: Ancient Encodings
+      file: AncientEncodings
+    - name: Perfect Synchronization
+      file: PerfectSynchronization
+    - name: Small StEps
+      file: SmallStEps
+  - name: blockchain
+    challenges:
+    - name: Navigating the unknown
+      file: Navigatingtheunknown
+    - name: Shooting 101
+      file: Shooting101
+  - name: web
+    challenges:
+    - name: Gunhead
+      file: Gunhead
+    - name: Drobots
+      file: Drobots
+    - name: Orbital
+      file: Orbital
+    - name: Trapped Source
+      file: TrappedSource
+    - name: Passman
+      file: Passman
+  - name: misc
+    challenges:
+    - name: Persistence
+      file: Persistence
+    - name: Restricted
+      file: Restricted
+    - name: Hijack
+      file: Hijack
+    - name: Remote Computation
+      file: RemoteComputation
+  - name: ml
+    challenges:
+    - name: Reconfiguration
+      file: Reconfiguration
+  - name: pwn
+    challenges:
+    - name: Initialise Connection
+      file: InitialiseConnection
+    - name: Questionnaire
+      file: Questionnaire
+    - name: Getting Started
+      file: GettingStarted
+  - name: re
+    challenges:
+    - name: Shattered Tablet
+      file: ShatteredTablet
+    - name: Hunting License
+      file: HuntingLicense
+    - name: Needle in a Haystack
+      file: NeedleinaHaystack
+    - name: She Shells C Shells
+      file: SheShellsCShells
+  - name: hardware
+    challenges:
+    - name: Timed Transmission
+      file: TimedTransmission
+    - name: Critical Flight
+      file: CriticalFlight
+Cyber Apocalypse 2022:
+  categories:
+  - name: forensics
+    challenges:
+    - name: Intergalactic Recovery
+      file: IntergalacticRecovery
+    - name: Puppeteer
+      file: Puppeteer
+    - name: Golden Persistence
+      file: GoldenPersistence
+    - name: Automation
+      file: Automation
+    - name: Free Services
+      file: FreeServices
+  - name: web
+    challenges:
+    - name: Amidst Us
+      file: AmidstUs
+    - name: Krpytos Support
+      file: KrpytosSupport
+    - name: Blinker fluid
+      file: Blinkerfluid
+  - name: pwn
+    challenges:
+    - name: 'Space Pirate : Going Deeper'
+      file: SpacePirateGoingDeeper
+  - name: re
+    challenges:
+    - name: Omega One
+      file: OmegaOne
+    - name: WIDE
+      file: WIDE
+Sdctf 2022:
+  categories:
+  - name: jail
+    challenges:
+    - name: rbash warmup
+      file: rbashwarmup
+    - name: rbash yet another calculator
+      file: rbashyetanothercalculator
+  - name: forensics
+    challenges:
+    - name: Flag Trafficker
+      file: FlagTrafficker
+    - name: Susan album party
+      file: Susanalbumparty
+  - name: osint
+    challenges:
+    - name: Mann-Hunt
+      file: MannHunt
+    - name: Google-Ransom
+      file: GoogleRansom
+    - name: Part of the ship
+      file: Partoftheship
+    - name: Samuel
+      file: Samuel
+    - name: Paypal Playboy
+      file: PaypalPlayboy
+  - name: crypto
+    challenges:
+    - name: Vinegar
+      file: Vinegar
+  - name: web
+    challenges:
+    - name: Lots of logs
+      file: Lotsoflogs
+  - name: misc
+    challenges:
+    - name: Ishihara test++
+      file: Ishiharatest
+    - name: Bishop Duel
+      file: BishopDuel
+  - name: pwn
+    challenges:
+    - name: Horoscope
+      file: Horoscope
+Nahamcon 2022:
+  categories:
+  - name: mobile
+    challenges:
+    - name: Mobilize
+      file: Mobilize
+  - name: crypto
+    challenges:
+    - name: BABY RSA
+      file: BABYRSA
+    - name: UNIMOD
+      file: UNIMOD
+  - name: keeber_security
+    challenges:
+    - name: Keeber 1
+      file: Keeber1
+    - name: Keeber 2
+      file: Keeber2
+    - name: Keeber 3
+      file: Keeber3
+    - name: Keeber 4
+      file: Keeber4
+    - name: Keeber 5
+      file: Keeber5
+    - name: Keeber 6
+      file: Keeber6
+    - name: Keeber 7
+      file: Keeber7
+    - name: Keeber 8
+      file: Keeber8
+  - name: web
+    challenges:
+    - name: Jurrassic Park
+      file: JurrassicPark
+    - name: EXtravagant
+      file: EXtravagant
+    - name: Personnel
+      file: Personnel
+  - name: misc
+    challenges:
+    - name: To be and not to be
+      file: Tobeandnottobe
+    - name: Gossip
+      file: Gossip
+    - name: Steam Locomotive
+      file: SteamLocomotive
+  - name: warmups
+    challenges:
+    - name: crash override
+      file: crashoverride
+    - name: exit vim
+      file: exitvim
+    - name: prisoner
+      file: prisoner
+    - name: flagcat
+      file: flagcat
+    - name: wizard
+      file: wizard
+    - name: Quirky
+      file: Quirky
+  - name: pwn
+    challenges:
+    - name: Babiersteps
+      file: Babiersteps
+Metasploit 2021:
+  categories:
+  - name: 9_of_diamonds
+    challenges:
+    - name: 9 of diamonds
+      file: 9ofdiamonds
+  - name: 2_of_spades
+    challenges:
+    - name: 2 of spades
+      file: 2ofspades
+  - name: jack_of_hearts
+    challenges:
+    - name: jack of hearts
+      file: jackofhearts
+  - name: ace_of_hearts
+    challenges:
+    - name: ace of hearts
+      file: aceofhearts
+  - name: 10_of_clubs
+    challenges:
+    - name: 10 of clubs
+      file: 10ofclubs
+  - name: 3_of_hearts
+    challenges:
+    - name: 3 of hearts
+      file: 3ofhearts
+  - name: 5_of_diamonds
+    challenges:
+    - name: 5 of diamonds
+      file: 5ofdiamonds
+  - name: 4_of_diamonds
+    challenges:
+    - name: 4 of diamonds
+      file: 4ofdiamonds
+  - name: 4_of_hearts
+    challenges:
+    - name: 4 of hearts
+      file: 4ofhearts
+Hacktivitycon 2021:
+  categories:
+  - name: mobile
+    challenges:
+    - name: To do
+      file: Todo
+    - name: Reactor
+      file: Reactor
+  - name: osint
+    challenges:
+    - name: Challenge Jed Sheeran
+      file: ChallengeJedSheeran
+  - name: crypto
+    challenges:
+    - name: Hexahedron
+      file: Hexahedron
+    - name: N1TP
+      file: N1TP
+    - name: TRIFORCE
+      file: TRIFORCE
+  - name: web
+    challenges:
+    - name: Titanic
+      file: Titanic
+    - name: SWAGGY
+      file: SWAGGY
+    - name: Confidentiality
+      file: Confidentiality
+  - name: misc
+    challenges:
+    - name: Shelle
+      file: Shelle
+    - name: WORD CHURCH
+      file: WORDCHURCH
+    - name: Bad Words
+      file: BadWords
+  - name: scripting
+    challenges:
+    - name: UHAHA
+      file: UHAHA
+  - name: warmups
+    challenges:
+    - name: Target Practice
+      file: TargetPractice
+    - name: 2EZ
+      file: 2EZ
+    - name: TSUNAMI
+      file: TSUNAMI
+    - name: Six Four Over Two
+      file: SixFourOverTwo
+    - name: Pimple
+      file: Pimple
+    - name: Bass64
+      file: Bass64
+    - name: ODDBALL
+      file: ODDBALL
+  - name: pwn
+    challenges:
+    - name: Butter Overflow
+      file: ButterOverflow
+Uiuctf 2021:
+  categories:
+  - name: forensics
+    challenges:
+    - name: tablet 1
+      file: tablet1
+    - name: tablet 2
+      file: tablet2
+  - name: osint
+    challenges:
+    - name: OSINT The Creator
+      file: OSINTTheCreator
+    - name: Chaplin's PR Nightmare - 1
+      file: ChaplinsPRNightmare1
+    - name: Chaplin's PR Nightmare - 2
+      file: ChaplinsPRNightmare2
+    - name: Chaplin's PR Nightmare - 3
+      file: ChaplinsPRNightmare3
+    - name: Chaplin's PR Nightmare - 4
+      file: ChaplinsPRNightmare4
+    - name: Chaplin's PR Nightmare - 5
+      file: ChaplinsPRNightmare5
+    - name: Chaplin's PR Nightmare - 6
+      file: ChaplinsPRNightmare6
+    - name: Chaplin's PR Nightmare - 7
+      file: ChaplinsPRNightmare7
+    - name: Chaplin's PR Nightmare - 8
+      file: ChaplinsPRNightmare8
+  - name: crypto
+    challenges:
+    - name: dhke_intro
+      file: dhkeintro
+    - name: back_to_basics
+      file: backtobasics
+  - name: misc
+    challenges:
+    - name: CEO
+      file: CEO
+    - name: doot doot
+      file: dootdoot
+    - name: Emote
+      file: Emote
+  - name: pwn
+    challenges:
+    - name: pwn warmup
+      file: pwnwarmup
+Hsctf 2021:
+  categories:
+  - name: algo
+    challenges:
+    - name: not-really-math
+      file: notreallymath
+  - name: crypto
+    challenges:
+    - name: aptenodytes-forsteri
+      file: aptenodytesforsteri
+    - name: opisthocomus-hoazin
+      file: opisthocomushoazin
+    - name: queen-of-the-hill
+      file: queenofthehill
+  - name: web
+    challenges:
+    - name: grading
+      file: grading
+    - name: message-board
+      file: messageboard
+    - name: NRC - no right click
+      file: NRCnorightclick
+    - name: big blind
+      file: bigblind
+    - name: Digits of Pi 1
+      file: DigitsofPi1
+  - name: misc
+    challenges:
+    - name: pallets-of-gold
+      file: palletsofgold
+    - name: glass-windows
+      file: glasswindows
+    - name: c-brother-1
+      file: cbrother1
+    - name: Geographic 1
+      file: Geographic1
+    - name: Geographic 2
+      file: Geographic2
+    - name: seeded randomizer
+      file: seededrandomizer
+  - name: pwn
+    challenges:
+    - name: stonks
+      file: stonks
+M0Lecon 2021:
+  categories:
+  - name: web
+    challenges:
+    - name: Lucky Fall
+      file: LuckyFall
+    - name: Key-Lottery
+      file: KeyLottery
+    - name: M0leFans
+      file: M0leFans
+Sdctf 2021:
+  categories:
+  - name: osint
+    challenges:
+    - name: Speed-Studying
+      file: SpeedStudying
+    - name: hIDe and seek
+      file: hIDeandseek
+    - name: hIDe and seek 2
+      file: hIDeandseek2
+    - name: 'This flag has been stolen:'
+      file: Thisflaghasbeenstolen
+    - name: 'Speed-Studying 2 :'
+      file: SpeedStudying2
+  - name: crypto
+    challenges:
+    - name: Lost in transmission
+      file: Lostintransmission
+    - name: A prime hash candidate
+      file: Aprimehashcandidate
+  - name: web
+    challenges:
+    - name: Apollo 1337
+      file: Apollo1337
+    - name: GETS Request
+      file: GETSRequest
+    - name: Git Good
+      file: GitGood
+  - name: misc
+    challenges:
+    - name: No flag for you
+      file: Noflagforyou
+    - name: Alternative Arithmetic
+      file: AlternativeArithmetic
+    - name: Alternative Arithmetic (Final Flag)
+      file: AlternativeArithmeticFinalFlag
+  - name: pwn
+    challenges:
+    - name: Flag Dropper
+      file: FlagDropper
+    - name: printFailed
+      file: printFailed
+  - name: re
+    challenges:
+    - name: A bowl of pythons
+      file: Abowlofpythons
+Wpictf 2021:
+  categories:
+  - name: forensics
+    challenges:
+    - name: DFIR
+      file: DFIR
+    - name: 'Holmes:'
+      file: Holmes
+  - name: stego
+    challenges:
+    - name: Glute
+      file: Glute
+    - name: Suspicious traffic
+      file: Suspicioustraffic
+  - name: web
+    challenges:
+    - name: wpi admin
+      file: wpiadmin
+    - name: wpi admin 2
+      file: wpiadmin2
+    - name: wpi admin 3
+      file: wpiadmin3
+  - name: misc
+    challenges:
+    - name: Pokemon
+      file: Pokemon
+    - name: Cast_Away
+      file: CastAway
+  - name: pwn
+    challenges:
+    - name: $m4$h
+      file: m4h
+  - name: re
+    challenges:
+    - name: "Baby\u2019s First Reversing"
+      file: BabysFirstReversing
+Cyber Apocalypse 2021:
+  categories:
+  - name: forensics
+    challenges:
+    - name: AlienPhish
+      file: AlienPhish
+    - name: Invitation
+      file: Invitation
+    - name: Oldest trick in the book
+      file: Oldesttrickinthebook
+  - name: crypto
+    challenges:
+    - name: Nintendo Base64
+      file: NintendoBase64
+    - name: PhaseStream 1
+      file: PhaseStream1
+    - name: SoulCrabber 1
+      file: SoulCrabber1
+  - name: web
+    challenges:
+    - name: Inspector gadget
+      file: Inspectorgadget
+    - name: Cass
+      file: Cass
+    - name: DAAS
+      file: DAAS
+    - name: MiniSTRyplace
+      file: MiniSTRyplace
+    - name: Wild Goose Hunt
+      file: WildGooseHunt
+  - name: misc
+    challenges:
+    - name: Alien Camp
+      file: AlienCamp
+    - name: Input as a service
+      file: Inputasaservice
+    - name: Robotic Infiltration
+      file: RoboticInfiltration
+  - name: re
+    challenges:
+    - name: Authenticator
+      file: Authenticator
+    - name: Passphrase
+      file: Passphrase
+  - name: hardware
+    challenges:
+    - name: 'Serial Logs:'
+      file: SerialLogs
+    - name: Compromised
+      file: Compromised
+Nahamcon 2021:
+  categories:
+  - name: forensics
+    challenges:
+    - name: buzz
+      file: buzz
+    - name: Henpeck
+      file: Henpeck
+    - name: Typewriter
+      file: Typewriter
+    - name: Parseltongue
+      file: Parseltongue
+  - name: osint
+    challenges:
+    - name: intigriti Sponsor
+      file: intigritiSponsor
+    - name: INE Sponsor
+      file: INESponsor
+    - name: Google Play Sponsor
+      file: GooglePlaySponsor
+  - name: crypto
+    challenges:
+    - name: esab64
+      file: esab64
+    - name: chicken wings
+      file: chickenwings
+    - name: veebee
+      file: veebee
+    - name: Dice Roll
+      file: DiceRoll
+    - name: 'Car Keys:'
+      file: CarKeys
+    - name: Treasure
+      file: Treasure
+    - name: EAXY
+      file: EAXY
+  - name: stego
+    challenges:
+    - name: Shoelaces
+      file: Shoelaces
+    - name: Pollex
+      file: Pollex
+  - name: android
+    challenges:
+    - name: Andra
+      file: Andra
+    - name: Resourceful
+      file: Resourceful
+  - name: web
+    challenges:
+    - name: $Echo
+      file: Echo
+    - name: Homeward Bound
+      file: HomewardBound
+  - name: misc
+    challenges:
+    - name: eighth_circle
+      file: eighthcircle
+    - name: Prison Break
+      file: PrisonBreak
+    - name: Zenith
+      file: Zenith
+  - name: mission
+    challenges:
+    - name: Bionic
+      file: Bionic
+    - name: RECON
+      file: RECON
+    - name: Gus
+      file: Gus
+    - name: Meet The Team
+      file: MeetTheTeam
+    - name: hercules
+      file: hercules
+    - name: Leo
+      file: Leo
+    - name: Lyra and Orion
+      file: LyraandOrion
+    - name: Hydraulic
+      file: Hydraulic

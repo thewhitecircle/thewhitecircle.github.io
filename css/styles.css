@@ -14,16 +14,16 @@
 	src: url(../fonts/JetBrainsMono-Regular.ttf) format('truetype');
 }
 
-html { background-color: #000000; height: 100%; width: 100%; margin: 0; padding: 0; scroll-behavior: smooth; font-family: 'JetBrainsMono', monospace; visibility: visible; opacity: 1; overflow: scroll; /*overflow-x: hidden; /*scrollbar-width: none;*/ font-size: 16px; scrollbar-color: white cyan; }
+html { background-color: #000000; height: 100%; width: 100%; margin: 0; padding: 0; scroll-behavior: smooth; font-family: 'JetBrainsMono', monospace; visibility: visible; opacity: 1; overflow: scroll; /*overflow-x: hidden; /*scrollbar-width: none;*/ font-size: 16px; }
 body::-webkit-scrollbar {
-  width: 10px; /* Mostly for vertical scrollbars */
-  height: 10px; /* Mostly for horizontal scrollbars */
+  width: 5px; /* Mostly for vertical scrollbars */
+  height: 5px; /* Mostly for horizontal scrollbars */
 }
 body::-webkit-scrollbar-thumb { /* Foreground */
-  background: white;
+  background: rgba(255, 152, 0, 0.8);
 }
 body::-webkit-scrollbar-track { /* Background */
-  background: cyan;
+  background: black;
 }
 @media (min-width: 640px) and (max-width: 1439px) { html { font-size: calc(16px + (20 - 16) * (100vw - 640px) / (1439 - 640)); } }
 /* Define max font size */
@@ -38,7 +38,7 @@ main { flex-grow: 1; flex-shrink: 0; height: auto; width: 100%; display: flex; a
 code { font-family: 'JetBrainsMono'; }
 li { list-style-type: '◈ '; line-height: 200%; }
 ::selection { color: cyan; background: black; }
-::-webkit-scrollbar { width: 0px; background: transparent; }
+::-webkit-scrollbar { width: 5px; background: transparent; }
 
 #bg-overlay { position: fixed; z-index: -20000; height: 100vh; width: 100%; }
 #bg-img { position: fixed; z-index: -20001; background-image: url('../images/bg.jpg'); height: 100vh; width: 100%; filter: brightness(20%); }
@@ -86,6 +86,7 @@ li { list-style-type: '◈ '; line-height: 200%; }
 
 .intro-card { margin-left: 40px; margin-right: 40px; width: 100%; height: auto; text-align: center; word-wrap: break-word; display: flex; align-items: center; justify-content: center; flex-direction: column; }
 .card-title { font-family: 'Tenika'; }
+.heading { text-align: center; font-family: 'Tenika'; }
 .sub-intro { width: 80%; height: auto; font-size: 1.2rem; }
 .join-btn { font-size: 1.2em; padding: 20px; font-family: 'Tenika'; font-weight: bold; }
 .site-nav-col { width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; }
@@ -219,3 +220,29 @@ fieldset { border-radius: 5px; border: 1.5px solid #ff9800; }
 ::placeholder { color: grey; }
 .gform-btn { background-color: transparent; cursor: pointer; border: 1.5px solid #00e1ff; border-radius: 5px; padding: 5px; margin: 5px; font-size: 0.9em; }
 .gform-btn-cont { display: block; text-align: center; margin: 10px; }
+
+.modal { display: none; align-items: center; justify-content: center; position: fixed; width: 100%; height: 100%; z-index: 2; left: 0; top: 0; overflow: auto; background-color: rgba(0,0,0,0.4); animation: fadeIn 0.2s; box-sizing: border-box; }
+.modal-content { box-shadow: 0 10px 20px rgba(0,255,255,0.19), 0 6px 6px rgba(0,255,255,0.23); background-color: rgba(0, 0, 0, 0.7); margin: 0; padding: 20px; border: 0; height: 80%; width: 80%; box-sizing: border-box; display: flex; flex-direction: column; }
+#modal-wrapper { display: none; position: fixed; top: 0; left: 0; overflow: auto; background: transparent; height: 100%; width: 100%; z-index: 1; box-sizing: border-box; animation: fadeIn 0.1s; }
+
+@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+.s-close-btn-wrapper { display: flex; justify-content: end; margin: 0 12px 0 12px; }
+.s-close-btn { color: red; font-size: 32px; line-height: 20px; font-weight: bold; background-color: transparent; border: 0; }
+.s-close-btn:hover,
+.s-close-btn:focus { text-decoration: none; cursor: pointer; }
+
+.form-wrapper { display: flex; }
+.result-box { height: 100%; border-radius: 5px; border: 1.5px solid #ff9800; margin: 0 12px 5px 12px; padding: 15px; overflow-x: hidden; overflow-y: scroll; }
+.tag-row { margin: 2.5px; padding: 0; line-height: 0; overflow-x: scroll; }
+.tag-btn { background: #ff9800; color: black; font-family: JetBrainsMono; font-weight: bold; text-transform: uppercase; width: auto; height: auto; border: 1px solid black; border-radius: 5px; margin: 0 2.5px 0 2.5px; text-decoration: none; cursor: pointer; }
+@media screen and (max-width: 767px) { .modal-content { width: 95%; } .result-box { padding: 0px; } #search-resp { margin-left: 0px; padding-left: 30px; padding-right: 10px; } }
+
+.categ-btn { width: 500px; height: 60px; background-color: transparent; border: 0; font-size: 1.6vh; font-weight: bold; font-family: JetBrainsMono; text-transform: uppercase; text-decoration: none; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.categ-title { width: 48%; margin-bottom: 5px; height: 40px; display: flex; justify-content: center; align-items: center; font-weight: bold; text-transform: uppercase; text-decoration: none; }
+.categ-card { height: auto; display: flex; flex-direction: column; justify-content: center; padding: 30px; margin-top: 10px;}
+.writeup-lnk { margin: 10px; word-break: keep-all; }
+@media screen and (max-width: 767px) { .slide { width: 90%; } }
+.categ-modal { display: none; align-items: center; justify-content: center; position: fixed; width: 100%; height: 100%; z-index: 2; left: 0; top: 0; overflow: auto; background-color: rgba(0,0,0,0.4); animation: fadeIn 0.2s; box-sizing: border-box; }
+.categ-modal-content { margin: 0; padding: 20px; border: 0; height: 100%; width: 30%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
+@media screen and (max-width: 767px) { .categ-modal-content{ width: 100%; } }

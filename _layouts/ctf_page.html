@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<h1 class="heading card-title white-text">{{ page.ctf }}</h1>
+
+<div class="ctf-cat-bar">
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="location.href='{{ site.url }}/{{ site.ctf_dir }}/'">◀</div>
+</div>
+
+{% assign ctf_data = site.data.ctf_writeups[page.ctf] %}
+<div class="wu-container">
+    <div id="modal-wrapper"></div>
+    {% for categ_data in ctf_data.categories %}
+    <div id="modal-btn-{{ categ_data['name'] }}" onclick="openModal('modal-{{ categ_data["name"] }}')" data-augmented-ui="tl-clip br-clip both" class="aui-theme cyan-text categ-btn m10">{{ categ_data['name'] }}</div>
+
+    <div id="modal-{{ categ_data['name'] }}" class="categ-modal">
+        <div class="categ-modal-content">
+            <div class="s-close-btn-wrapper">
+                <button onclick="closeModal('modal-{{ categ_data["name"] }}')" class="s-close-btn">&times;</button>
+            </div>
+            <div data-augmented-ui="br-clip both" class="aui-theme-btn white-text categ-title">{{ categ_data['name'] }}</div>
+            <div style="--aug-tl-inset1: 50%; margin-top: -2%" data-augmented-ui="tl-clip-x tr-clip both" class="aui-theme categ-card">
+                {% for entry in categ_data['challenges'] %}
+                <a class="writeup-lnk" href="{{ site.url }}{{ page.url }}{{ categ_data['name'] }}/{{entry['file']}}">
+                    <span class="white-text">▶ </span>{{ entry['name'] }}
+                </a><br>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+    var wrapper = document.getElementById('modal-wrapper');
+
+    function openModal(modalId) {
+        modal = document.getElementById(modalId);
+        wrapper.style.display = 'block';
+        wrapper.style.backdropFilter = 'blur(15px)';
+        modal.style.display = 'flex';
+        document.body.style.position = 'fixed';
+    }
+
+    function closeModal(modalId) {
+        modal = document.getElementById(modalId);
+        wrapper.style.display = 'none';
+        wrapper.style.backdropFilter = 'none';
+        modal.style.display = 'none';
+        document.body.style.position = '';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            wrapper.style.display = 'none';
+            wrapper.style.backdropFilter ='none';
+            modal.style.display = 'none';
+            document.body.style.position = '';
+        }
+    }
+</script>

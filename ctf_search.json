@@ -1,0 +1,14 @@
+---
+layout: null
+---
+[
+	{% assign load_md_pages = site.pages | where: "layout", "load_md" %}
+	{% for entry in load_md_pages %}
+	{
+		"title": "[{{ entry.ctf }}] {{ entry.challenge | escape }}",
+		"url": "{{ site.url }}{{ entry.url }}",
+		"tags": "{{ entry.tags }}"
+	}
+	{% unless forloop.last %},{% endunless %}
+	{% endfor %}
+]
