@@ -9,6 +9,8 @@ baseurl: "/"
 
 url: "https://twc1rcle.com"
 
+ctf_dir: "ctf/team/ctf_writeups"
+
 discord: "https://discord.gg/MtKK7U4"
 
 plugins:
