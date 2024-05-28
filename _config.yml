@@ -18,3 +18,10 @@ plugins:
   - jekyll-sitemap
 
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "ctf/team/ctf_writeups/*/*.md"
+    values:
+      sitemap: false
