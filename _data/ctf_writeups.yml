@@ -1,3 +1,67 @@
+Nahamcon 2024:
+  categories:
+  - name: forensics
+    challenges:
+    - name: Breath of the wild
+      file: Breathofthewild
+    - name: 1337 Malware
+      file: 1337Malware
+  - name: mobile
+    challenges:
+    - name: Kitty Kitty Bang Bang
+      file: KittyKittyBangBang
+  - name: warmup
+    challenges:
+    - name: QRRRRRRRR
+      file: QRRRRRRRR
+    - name: "That\u2019s not my base"
+      file: Thatsnotmybase
+    - name: copypasta
+      file: copypasta
+    - name: Twine
+      file: Twine
+    - name: eicar
+      file: eicar
+    - name: Read the rules
+      file: Readtherules
+    - name: Uriel
+      file: Uriel
+  - name: crypto
+    challenges:
+    - name: Magic RSA
+      file: MagicRSA
+  - name: web
+    challenges:
+    - name: Helpful Desk
+      file: HelpfulDesk
+    - name: Thomas DEVerson
+      file: ThomasDEVerson
+    - name: The Davinci Code
+      file: TheDavinciCode
+    - name: All About Robots
+      file: AllAboutRobots
+    - name: iDoor
+      file: iDoor
+    - name: The Hacker Webstore
+      file: TheHackerWebstore
+    - name: The Mission Part 1 - Knock Knock
+      file: TheMissionPart1KnockKnock
+    - name: My Shop Disaster
+      file: MyShopDisaster
+  - name: misc
+    challenges:
+    - name: SecureSurfer
+      file: SecureSurfer
+  - name: scripting
+    challenges:
+    - name: Base3200
+      file: Base3200
+    - name: Hashes on Hashes on Hashes
+      file: HashesonHashesonHashes
+  - name: re
+    challenges:
+    - name: Ring Cycle Basics
+      file: RingCycleBasics
 Cyber Apocalypse 2024:
   categories:
   - name: forensics
@@ -566,7 +630,7 @@ Wpictf 2021:
       file: m4h
   - name: re
     challenges:
-    - name: "Baby's First Reversing"
+    - name: Baby's First Reversing
       file: BabysFirstReversing
 Cyber Apocalypse 2021:
   categories:
