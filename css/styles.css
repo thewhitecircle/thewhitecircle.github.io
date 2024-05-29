@@ -77,7 +77,7 @@ li { list-style-type: '◈ '; line-height: 200%; }
 
 .aui-theme { outline: 1px solid transparent; padding: 10px; --aug-border-bg: #ff9800; --aug-border-all: 1.5px; --aug-inlay-all: 5px; --aug-inlay-bg: rgba(0, 255, 255, 0.1); box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.2) inset; }
 .aui-theme:hover { --aug-inlay-bg: rgba(255, 0, 0, 0.1); box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.5) inset; }
-.aui-theme-btn { padding: 10px; --aug-border-bg: #ff9800; --aug-border-all: 1.5px; --aug-inlay-all: 5px; --aug-inlay-bg: rgba(0, 255, 255, 0.2); }
+.aui-theme-btn { padding: 10px; --aug-border-bg: #ff9800; --aug-border-all: 1.5px; --aug-inlay-all: 5px; --aug-inlay-bg: rgba(0, 255, 255, 0.2); line-height: 1; }
 .aui-theme-btn:hover { --aug-inlay-bg: rgba(0, 255, 0, 1); color: black; text-shadow: 0 0 10px black; font-weight: bold; }
 
 .red-text { color: red; text-shadow: 0 0 10px #000000, 0 0 10px #ff0000; }
@@ -199,7 +199,7 @@ fieldset { border-radius: 5px; border: 1.5px solid #ff9800; }
 .ctf-cat-bar { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; }
 .ctf-cat-btn { padding: 15px 40px 15px 40px; margin: 5px; cursor: pointer; width: 6.5em; height: auto; font-family: 'Tenika'; font-size: 0.7em; text-transform: uppercase; display: flex; justify-content: center; align-items: center; }
 .ctf-w { width: 80%; height:100%; word-wrap:break-word; }
-.ctf-w img { max-width: 100%; height: auto; box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); display: block; margin: 0 auto; border-radius: 5px; transition: transform 0.2s ease-in-out; position: relative; z-index: 3; }
+.ctf-w img { max-width: 100%; height: auto; box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); display: block; margin: 0 auto; border-radius: 5px; transition: transform 0.2s ease-in-out; position: relative; z-index: 1; }
 .ctf-w img:hover { transform: scale(1.2); }
 .ctf-w p { color: #bdbdbd; }
 /*.ctf-w span { color: white; text-shadow: 0 0 5px #000000, 0 0 10px #ffffff; }*/
