@@ -31,7 +31,7 @@ body::-webkit-scrollbar-track { /* Background */
 /* Define max font size */
 @media (min-width: 1440px) { html { font-size: 20px; } }
 
-body { height: 100%; width: 100%; margin: 0; padding: 0; display: flex; flex-direction: column; }
+body { height: 100%; width: 100%; margin: 0; padding: 0; display: flex; flex-direction: column; overflow-x: hidden; }
 a { outline: 0; -webkit-tap-highlight-color: transparent; color: #00FF00; text-shadow: 0px 0px 10px #00FF00; word-break: break-all; }
 a:link { text-decoration: none; }
 footer { left: 0; right: 0; bottom: 0; margin: 0; }
