@@ -2,6 +2,22 @@
 layout: default
 ---
 
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{ page.title }}",
+        "image": [
+            "http://192.168.0.197:4000/images/twc_og_banner.jpg"
+        ],
+        "author": [{
+            "@type": "Organization",
+            "name": "The White Circle",
+            "url": "https://twc1rcle.com/"
+        }]
+    }
+</script>
+
 <div class="ctf-cat-bar">
     <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="location.href='{{ site.url }}/{{ site.ctf_dir }}/{{ page.parent }}/'">◀</div>
     <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="openModal()">{{ page.category }}</div>
