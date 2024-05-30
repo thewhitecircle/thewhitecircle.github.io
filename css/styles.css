@@ -234,8 +234,8 @@ code.language-plaintext { background-color: #1b1d1e; padding-left: 5px; padding-
 
 @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
 
-.s-close-btn-wrapper { display: flex; justify-content: end; margin: 0 12px 0 12px; }
-.s-close-btn { color: red; font-size: 32px; line-height: 20px; font-weight: bold; background-color: transparent; border: 0; }
+.btn-row { display: flex; justify-content: space-between; }
+.s-close-btn { width: 10%; margin-bottom: 4%; font-size: 14px; font-weight: bold; display: flex; align-items: center; justify-content: center;  }
 .s-close-btn:hover,
 .s-close-btn:focus { text-decoration: none; cursor: pointer; }
 
