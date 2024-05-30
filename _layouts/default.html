@@ -47,7 +47,23 @@
 			document.getElementsByTagName('HEAD')[0].appendChild(link);
 		}
 	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+{% if page.url == "/" %}
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"image": "https://twc1rcle.com/images/twc_og_banner.jpg",
+			"url": "https://twc1rcle.com/",
+			"logo": "https://twc1rcle.com/images/twc_logo_sm.png",
+			"name": "{{ site.title }}",
+			"description": "{{ site.description }}",
+			"email": "thewhitecircle@protonmail.com"
+		}
+	</script>
+{% endif %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-STKQSPZJNW"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
