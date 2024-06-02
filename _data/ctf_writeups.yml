@@ -1,3 +1,23 @@
+Gpnctf 2024:
+  categories:
+  - name: crypto
+    challenges:
+    - name: never gonna let you crypto
+      file: nevergonnaletyoucrypto
+  - name: web
+    challenges:
+    - name: Never gonna tell a lie and type you
+      file: Nevergonnatellalieandtypeyou
+    - name: todo
+      file: todo
+  - name: pwn
+    challenges:
+    - name: Never gonna give you UB
+      file: NevergonnagiveyouUB
+  - name: re
+    challenges:
+    - name: Never gonna run around and reverse you
+      file: Nevergonnarunaroundandreverseyou
 Nahamcon 2024:
   categories:
   - name: forensics
