@@ -1,6 +1,6 @@
 - alias: thewhiteh4t
   title: Founder
-  image: images/team/twh.png
+  image: images/team/twh
   social:
     -
       website:
@@ -18,7 +18,7 @@
 
 - alias: avantika
   title: Community Leader
-  image: images/team/ava.png
+  image: images/team/ava
   social:
     -
       website:

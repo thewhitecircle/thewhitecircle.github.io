@@ -1,6 +1,6 @@
 - alias: starry-lord
   title: Server Booster
-  image: images/contrib/starry_lord.jpg
+  image: images/contrib/starry_lord
   social:
     -
       website:
@@ -18,7 +18,7 @@
 
 - alias: choco
   title: Server Booster
-  image: images/contrib/choco.gif
+  image: images/contrib/choco
   social:
     -
       website:
@@ -36,7 +36,7 @@
 
 - alias: c0vidPy
   title: Server Booster
-  image: images/contrib/covidpy.png
+  image: images/contrib/covidpy
   social:
     -
       website:

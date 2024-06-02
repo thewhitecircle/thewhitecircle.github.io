@@ -28,7 +28,11 @@ image: images/twc_og_banner.jpg
 			<div class="member-sub-card sub-tilt">
 				<div class="member-meta-left">
 					<div data-augmented-ui="tr-clip bl-clip border" class="aui-theme member-img-wrapper">
-						<img class="member-img lazyload" src="{{ site.url }}/{{ member.image }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{ site.url }}/{{ member.image }} ">
+						<picture>
+							<source data-srcset="{{ site.url }}/{{ member.image }}.avif" type="image/avif">
+							<source data-srcset="{{ site.url }}/{{ member.image }}.jpg" type="image/jpg">
+							<img class="member-img lazyload" src="{{ site.url }}/{{ member.image }}.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ site.url }}/{{ member.image }}.jpg" alt="TWC CTF Team Members">
+						</picture>
 					</div>
 				</div>
 				<div class="member-meta-right">

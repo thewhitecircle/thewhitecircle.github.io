@@ -1,5 +1,5 @@
 - alias: avantika
-  image: images/team/ava.png
+  image: images/team/ava
   social:
     -
       website:
@@ -16,7 +16,7 @@
         link: https://www.linkedin.com/in/iamavu/
 
 - alias: Legend
-  image: images/team/legend.gif
+  image: images/team/legend
   social:
     -
       website:
@@ -33,7 +33,7 @@
         link:
 
 - alias: nigamelastic
-  image: images/team/nigam.webp
+  image: images/team/nigam
   social:
     -
       website:
@@ -50,7 +50,7 @@
         link: https://www.linkedin.com/in/kshitijnigam
 
 - alias: starry-lord
-  image: images/contrib/starry_lord.jpg
+  image: images/contrib/starry_lord
   social:
     -
       website:
@@ -67,7 +67,7 @@
         link: https://www.linkedin.com/in/sami-chakrouns
 
 - alias: thewhiteh4t
-  image: images/team/twh.png
+  image: images/team/twh
   social:
     -
       website:

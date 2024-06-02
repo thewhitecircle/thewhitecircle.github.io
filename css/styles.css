@@ -43,7 +43,13 @@ li { list-style-type: '◈ '; line-height: 200%; }
 ::-webkit-scrollbar { width: 5px; background: transparent; }
 
 #bg-overlay { position: fixed; z-index: -20000; height: 100vh; width: 100%; }
-#bg-img { position: fixed; z-index: -20001; background-image: url('../images/bg.jpg'); height: 100vh; width: 100%; filter: brightness(20%); }
+#bg-img { position: fixed; z-index: -20001;
+	background-image: url('../images/bg.jpg');
+	background-image: image-set(
+		url('../images/bg.avif') type('image/avif'),
+		url('../images/bg.jpg') type('image/jpeg')
+	);
+	height: 100vh; width: 100%; filter: brightness(20%); }
 
 .container { height: 100%; width: 90vw; max-width: 1280px; margin-right: 10px; margin-left: 10px; padding-right: 10px; padding-left: 10px; display: flex; align-items: center; flex-direction: column; }
 .grid-container { display: grid; width: 100%; height: auto; grid-template-columns: auto; }
