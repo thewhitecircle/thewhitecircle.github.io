@@ -10,6 +10,8 @@ layout: default
         "image": [
             "https://twc1rcle.com/images/twc_og_banner.jpg"
         ],
+        "datePublished": "{{ page.date }}",
+        "dateModified": "{{ page.last_update }}",
         "author": [{
             "@type": "Organization",
             "name": "The White Circle",
@@ -29,6 +31,8 @@ layout: default
 {% endcapture mkd %}
 {{ mkd | markdownify }}
 </div>
+
+<span class="pub-date yellow-text">Published on : <span class="cyan-text">{{ page.date | date_to_string }}</span></span>
 
 <div id="modal-wrapper"></div>
 {% assign ctf_data = site.data.ctf_writeups[page.ctf] %}
