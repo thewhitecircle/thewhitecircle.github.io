@@ -6,17 +6,33 @@ layout: default
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "{{ page.title }}",
-        "image": [
-            "https://twc1rcle.com/images/twc_og_banner.jpg"
-        ],
-        "datePublished": "{{ page.date }}",
-        "dateModified": "{{ page.last_modified_at }}",
-        "author": [{
+        "url": "{{ site.url }}{{ page.url }}",
+        "publisher": {
             "@type": "Organization",
             "name": "The White Circle",
-            "url": "https://twc1rcle.com/"
-        }]
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://twc1rcle.com/images/twc_logo_sm_120.png"
+            }
+        },
+        "datePublished": "{{ page.date }}",
+        "dateModified": "{{ page.last_modified_at }}",
+        "headline": "{{ page.title }}",
+        "image": {
+            "@type": "ImageObject",
+            "width": 640,
+            "height": 320,
+            "url": "https://twc1rcle.com/images/twc_og_banner.jpg"
+        },
+        "thumbnailUrl": "https://twc1rcle.com/images/twc_og_banner.jpg",
+        "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+        "author": [
+            {
+                "@type": "Organization",
+                "name": "The White Circle",
+                "url": "https://twc1rcle.com/"
+            }
+        ]
     }
 </script>
 
