@@ -1,3 +1,95 @@
+Cyber Apocalypse 2025:
+  categories:
+  - name: forensics
+    challenges:
+    - name: Thorins Amulet
+      file: ThorinsAmulet
+    - name: A new Hire
+      file: AnewHire
+    - name: Silent Trap
+      file: SilentTrap
+    - name: Stealth Invasion
+      file: StealthInvasion
+    - name: ToolPie
+      file: ToolPie
+    - name: Cave Expedition
+      file: CaveExpedition
+    - name: Tales for the Brave
+      file: TalesfortheBrave
+  - name: osint
+    challenges:
+    - name: The Mechanical Bird's Nest
+      file: TheMechanicalBirdsNest
+    - name: The Shadowed Sigil
+      file: TheShadowedSigil
+    - name: The Ancient Citadel
+      file: TheAncientCitadel
+    - name: The Poisoned Scroll
+      file: ThePoisonedScroll
+    - name: Echoes In Stone
+      file: EchoesInStone
+    - name: The Stone That Whispers
+      file: TheStoneThatWhispers
+    - name: Hillside Haven
+      file: HillsideHaven
+  - name: crypto
+    challenges:
+    - name: Traces
+      file: Traces
+    - name: 'Kewiri:'
+      file: Kewiri
+    - name: Hourcle
+      file: Hourcle
+  - name: blockchain
+    challenges:
+    - name: Eldorion
+      file: Eldorion
+    - name: HeliosDEX
+      file: HeliosDEX
+    - name: EldoriaGate
+      file: EldoriaGate
+  - name: ai
+    challenges:
+    - name: Lunar Orb
+      file: LunarOrb
+    - name: Cursed GateKeeper
+      file: CursedGateKeeper
+    - name: Mirror Witch
+      file: MirrorWitch
+    - name: Embassy
+      file: Embassy
+    - name: Elixir Emporium
+      file: ElixirEmporium
+  - name: web
+    challenges:
+    - name: Trial by Fire
+      file: TrialbyFire
+    - name: Whispers of the Moonbeam
+      file: WhispersoftheMoonbeam
+  - name: ml
+    challenges:
+    - name: Enchanted Weights
+      file: EnchantedWeights
+  - name: coding
+    challenges:
+    - name: Enchanted Cipher
+      file: EnchantedCipher
+    - name: Dragon Fury
+      file: DragonFury
+    - name: Dragon Flight
+      file: DragonFlight
+    - name: The Clockwork Guardian
+      file: TheClockworkGuardian
+    - name: Summoners Incantation
+      file: SummonersIncantation
+  - name: re
+    challenges:
+    - name: Encrypted Scroll
+      file: EncryptedScroll
+    - name: Sealed Runes
+      file: SealedRunes
+    - name: ImpossiMaze
+      file: ImpossiMaze
 Gpnctf 2024:
   categories:
   - name: crypto
