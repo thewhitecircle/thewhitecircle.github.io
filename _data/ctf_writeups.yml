@@ -36,7 +36,7 @@ Cyber Apocalypse 2025:
     challenges:
     - name: Traces
       file: Traces
-    - name: 'Kewiri:'
+    - name: Kewiri
       file: Kewiri
     - name: Hourcle
       file: Hourcle
