@@ -35,6 +35,8 @@
 	<script>
 		{% if page.url == "/" %}
 			var links = ["{{ site.url }}/css/augmented-ui.min.css", "{{ site.url }}/css/styles.css"];
+		{% elsif page.layout == 'load_md' %}
+			var links = ["{{ site.url }}/css/augmented-ui.min.css", "{{ site.url }}/css/hljs.min.css", "{{ site.url }}/css/stk.css", "{{ site.url }}/css/styles.css"];
 		{% else %}
 			var links = ["{{ site.url }}/css/augmented-ui.min.css", "{{ site.url }}/css/styles.css"];
 		{% endif %}
@@ -46,7 +48,7 @@
 			link.href = value;
 			document.getElementsByTagName('HEAD')[0].appendChild(link);
 		}
-	</script>
+	</script>}
 
 {% if page.url == "/" %}
 	<script type="application/ld+json">
