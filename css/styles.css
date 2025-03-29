@@ -212,6 +212,7 @@ fieldset { border-radius: 5px; border: 1.5px solid #ff9800; }
 .ctf-w h2 { color: #ff9800; text-shadow: 0 0 5px #000000, 0 0 10px #ff9800; }
 .ctf-w pre { font-size: 16px; overflow-x: scroll; scrollbar-width: none; box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
 .ctf-w pre::-webkit-scrollbar { height: 0px; width: 0px; background: transparent; }
+code { background-color: transparent; color: red; }
 code.language-plaintext { background-color: transparent; color: red; }
 /*.ctf-w code { color: red; text-shadow: 0 0 10px #000000, 0 0 10px #ff0000; }
 .ctf-w code span { color: red; text-shadow: 0 0 10px #000000, 0 0 10px #ff0000; }
