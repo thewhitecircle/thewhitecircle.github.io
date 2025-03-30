@@ -9,14 +9,16 @@
 │                                                                                │
 └────────────────────────────────────────────────────────────────────────────────┘
 -->
+{% assign page_url_without_html = page.url | replace: '.html', '' %}
 <head>
 	<title>{{ page.title }}</title>
+	<meta charset="UTF-8">
 	<meta name="description" content="{{ site.description }}">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{ page.title }}">
 	<meta property="og:description" content="{{ site.description }}">
 	<meta property="og:image" content="{{ site.url }}/{{ page.image }}">
-	<meta property="og:url" content="{{ page.url }}">
+	<meta property="og:url" content="{{ site.url }}{{ page_url_without_html }}">
 	<meta property="og:site_name" content="{{ page.title }}">
 	<meta name="twitter:title" content="{{ page.title }}">
 	<meta name="twitter:card" content="summary_large_image">
@@ -31,8 +33,6 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
 	<link rel="manifest" href="{{ site.url }}/site.webmanifest">
-
-	{% assign page_url_without_html = page.url | replace: '.html', '' %}
 	<link rel="canonical" href="{{ site.url }}{{ page_url_without_html }}">
 
 	<style>html { visibility: hidden; opacity: 0; }</style>
@@ -52,7 +52,7 @@
 			link.href = value;
 			document.getElementsByTagName('HEAD')[0].appendChild(link);
 		}
-	</script>}
+	</script>
 
 {% if page.url == "/" %}
 	<script type="application/ld+json">

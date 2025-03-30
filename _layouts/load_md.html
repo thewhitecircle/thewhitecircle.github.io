@@ -2,11 +2,12 @@
 layout: default
 ---
 
+{% assign page_url_without_html = page.url | replace: '.html', '' %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "url": "{{ site.url }}{{ page.url }}",
+        "url": "{{ site.url }}{{ page_url_without_html }}",
         "publisher": {
             "@type": "Organization",
             "name": "The White Circle",
@@ -25,7 +26,7 @@ layout: default
             "url": "https://twc1rcle.com/images/twc_og_banner.jpg"
         },
         "thumbnailUrl": "https://twc1rcle.com/images/twc_og_banner.jpg",
-        "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+        "mainEntityOfPage": "{{ site.url }}{{ page_url_without_html }}",
         "author": [
             {
                 "@type": "Organization",
