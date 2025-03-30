@@ -7,10 +7,8 @@ layout: null
     <url>
       {% assign page_url_without_html = page.url | replace: '.html', '' %}
       <loc>{{ site.url }}{{ page_url_without_html }}</loc>
-      {% if page.lastmod == null %}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
+      {% if page.lastmod != null %}
+      <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
       {% endif %}
     </url>
   {% endfor %}
