@@ -22,7 +22,7 @@ layout: default
             </div>
             <div style="--aug-tl-inset1: 50%; margin-top: -2%" data-augmented-ui="tl-clip-x tr-clip both" class="aui-theme categ-card">
                 {% for entry in categ_data['challenges'] %}
-                <a class="writeup-lnk" href="{{ site.url }}{{ page.url }}{{ categ_data['name'] }}/{{entry['file']}}.html">
+                <a class="writeup-lnk" href="{{ site.url }}{{ page.url }}{{ categ_data['name'] }}/{{entry['file']}}">
                     <span class="white-text">▶ </span>{{ entry['name'] }}
                 </a><br>
                 {% endfor %}

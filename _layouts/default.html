@@ -32,7 +32,8 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
 	<link rel="manifest" href="{{ site.url }}/site.webmanifest">
 
-	<link rel="canonical" href="{{ page.url | absolute_url }}">
+	{% assign page_url_without_html = page.url | replace: '.html', '' %}
+	<link rel="canonical" href="{{ site.url }}{{ page_url_without_html }}">
 
 	<style>html { visibility: hidden; opacity: 0; }</style>
 	<script>
