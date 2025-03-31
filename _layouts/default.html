@@ -13,16 +13,16 @@
 <head>
 	<title>{{ page.title }}</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="{{ site.description }}">
+	<meta name="description" content="{{ page.desc }}">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{ page.title }}">
-	<meta property="og:description" content="{{ site.description }}">
+	<meta property="og:description" content="{{ page.desc }}">
 	<meta property="og:image" content="{{ site.url }}/{{ page.image }}">
 	<meta property="og:url" content="{{ site.url }}{{ page_url_without_html }}">
 	<meta property="og:site_name" content="{{ page.title }}">
 	<meta name="twitter:title" content="{{ page.title }}">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:description" content="{{ site.description }}">
+	<meta name="twitter:description" content="{{ page.desc }}">
 	<meta name="twitter:image" content="{{ site.url }}/{{ page.image }}">
 	<meta name="twitter:creator" content="@thewhiteh4t">
 	<meta name="theme-color" content="#0F2027">
@@ -63,7 +63,7 @@
 			"url": "https://twc1rcle.com/",
 			"logo": "https://twc1rcle.com/images/twc_logo.png",
 			"name": "{{ site.title }}",
-			"description": "{{ site.description }}",
+			"description": "{{ page.desc }}",
 			"email": "thewhitecircle@protonmail.com"
 		}
 	</script>
