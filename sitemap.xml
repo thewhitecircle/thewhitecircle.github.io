@@ -4,6 +4,7 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for page in site.pages %}
+  {% unless page.url contains '.bak' %}
     <url>
       {% assign page_url_without_html = page.url | replace: '.html', '' %}
       <loc>{{ site.url }}{{ page_url_without_html }}</loc>
@@ -11,5 +12,6 @@ layout: null
       <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
       {% endif %}
     </url>
+  {% endunless %}
   {% endfor %}
 </urlset>
