@@ -1,3 +1,65 @@
+Nahamcon 2025:
+  categories:
+  - name: TheMission
+    challenges:
+    - name: The Mission
+      file: TheMission
+  - name: osint
+    challenges:
+    - name: Taken to School
+      file: TakentoSchool
+    - name: Sending Mixed Signals
+      file: SendingMixedSignals
+  - name: warmup
+    challenges:
+    - name: The Oddyssey
+      file: TheOddyssey
+    - name: Screenshot
+      file: Screenshot
+    - name: Naham-Commencement 2025
+      file: NahamCommencement2025
+    - name: Quartet
+      file: Quartet
+  - name: malware
+    challenges:
+    - name: Verification Clarification
+      file: VerificationClarification
+  - name: crypto
+    challenges:
+    - name: Cryptoclock
+      file: Cryptoclock
+  - name: devops
+    challenges:
+    - name: The Best Butler
+      file: TheBestButler
+  - name: web
+    challenges:
+    - name: Method in the Madness
+      file: MethodintheMadness
+    - name: TMCB
+      file: TMCB
+    - name: SNAD
+      file: SNAD
+    - name: Infinite Queue
+      file: InfiniteQueue
+    - name: My First CTF
+      file: MyFirstCTF
+    - name: My Second CTF
+      file: MySecondCTF
+    - name: My Third CTF
+      file: MyThirdCTF
+    - name: NoSequel
+      file: NoSequel
+    - name: Advanced Screening
+      file: AdvancedScreening
+  - name: misc
+    challenges:
+    - name: Flagdle
+      file: Flagdle
+    - name: The Martian
+      file: TheMartian
+    - name: SSSH
+      file: SSSH
 Cyber Apocalypse 2025:
   categories:
   - name: forensics
