@@ -6,7 +6,7 @@ layout: null
 	{% for entry in load_md_pages %}
 	{
 		"title": "[{{ entry.ctf }}] {{ entry.challenge | escape }}",
-		"url": "{{ site.url }}{{ entry.url }}",
+		"url": "{{ site.url }}{{ entry.url | remove: '.html' }}",
 		"tags": "{{ entry.tags }}"
 	}
 	{% unless forloop.last %},{% endunless %}
