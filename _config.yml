@@ -11,7 +11,7 @@ url: "https://twc1rcle.com"
 
 ctf_dir: "ctf/team/ctf_writeups"
 
-discord: "https://discord.gg/MtKK7U4"
+discord: "https://discord.gg/r9XefZXuVH"
 
 markdown: kramdown
 
@@ -25,3 +25,5 @@ defaults:
       path: "ctf/team/ctf_writeups/*/*.md"
     values:
       sitemap: false
+
+#permalink: /:basename/
